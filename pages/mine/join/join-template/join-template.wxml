@@ -1,0 +1,95 @@
+<template name="joinTemplate">
+  <view class="Content">
+
+
+
+
+    <view class='main'>
+    <view class='type' >
+    <image class='type-icon' mode='widthFix' src='../../../resource/type-icon.png'> </image>
+    <view class='type-text'>{{acttype}}</view>
+    
+    </view>
+    
+      <view class='start-end'><view class='start-end-title'>活动集合：</view><view class='start-end-text'>{{start_name}}</view></view>
+      <view class='start-end'><view class='start-end-title'>活动地点：</view><view class='start-end-text'>{{end_name}}</view></view>
+
+      
+      <view class='row'>活动时间：
+        <span class="Txtcolor">{{date}} {{time}}</span>
+      </view>
+
+      <view class="row">出行方式：
+        
+          <view class='Txtcolor'>{{tripmode}}
+          </view></view>
+
+          <view class='row'>活动要求：
+
+
+        <view class='horizon'> 需要
+          <span class="Txtcolor"> {{people}}</span>人
+        </view>
+
+        <view class='horizon2'> 招募对象
+          <span class="Txtcolor">{{sex}}</span>
+
+
+
+        </view>
+        </view>
+
+
+   <view class='note' >
+   <view class='note-title'>活动备注：</view>
+      <span class='note-text'> {{note}}</span>
+
+    </view>
+
+
+     <!-- 乘客信息 -->
+    <view class='passenger'>
+       <view class='passenger-title'>已加入<span class="Txtcolor">{{joined}}</span>人(还需要：
+        <span class="Txtcolor">{{surplus}}</span>人)
+        <view class='cloumn'>
+           <!-- 发起人信息 -->
+          
+            <view>{{creater.name}}</view>
+            
+            <image  class='icon' mode='widthFix' src='../../../resource/{{creater.sex}}.png'></image>
+            <image class='icon' mode='widthFix' src='../../../resource/publisher.png'></image>  <!-- 发起人标志 -->
+            <image wx:if="{{disabled_cell==1}}" class="WeChat" mode='widthFix' src='../../../resource/WeChat.png' bindtap='calling' data-sid='{{creater.id}}' data-order='1' data-danhao='{{danhao}}'></image>
+            <image wx:if="{{disabled_cell==0}}" class="WeChat" mode='widthFix' src='../../../resource/WeChat2.png' data-sid='{{creater.id}}' data-order='1' data-danhao='{{danhao}}'></image>
+            <image wx:if="{{disabled_cell==1}}" class='Calling' mode='widthFix' src='../../../resource/calling.png' bindtap='calling' data-sid='{{creater.id}}' data-order='0' data-danhao='{{danhao}}'></image>
+            <image wx:if="{{disabled_cell==0}}" class='Calling' mode='widthFix' src='../../../resource/calling2.png' data-sid='{{creater.id}}' data-order='0' data-danhao='{{danhao}}'></image>
+        </view>
+      </view>
+        <!-- 加入者信息，列表渲染 -->
+      <block wx:for="{{joiner}}" wx:for-item='item' wx:key='key112'>
+
+         <!-- 乘客单条信息 -->
+        <view class='cloumn'>
+          <view>{{item.name}}</view>
+          <image class='icon' mode='widthFix' src='../../../resource/{{item.sex}}.png'></image>
+            <image wx:if="{{disabled_cell==1}}" class="WeChat" mode='widthFix' src='../../../resource/WeChat.png' bindtap='calling' data-sid='{{item.id}}' data-order='1' data-danhao='{{danhao}}'></image>
+            <image wx:if="{{disabled_cell==0}}" class="WeChat" mode='widthFix' src='../../../resource/WeChat2.png' ></image>
+            <image wx:if="{{disabled_cell==1}}" class='Calling' mode='widthFix' src='../../../resource/calling.png' bindtap='calling' data-sid='{{item.id}}' data-order='0' data-danhao='{{danhao}}'></image>
+            <image wx:if="{{disabled_cell==0}}" class='Calling' mode='widthFix' src='../../../resource/calling2.png' ></image>
+        </view>
+
+      </block>
+    </view>
+
+
+
+    
+      <button button size='mini' type='warn' class="btn" bindtap='exit' disabled='{{disable_exit}}' data-danhao='{{danhao}}'>
+
+        <view>{{order1}}</view>
+
+      </button>
+  
+   </view>
+  </view>
+</template>
+

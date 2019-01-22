@@ -1,0 +1,12 @@
+/* pages/mine/publish/publish.wxss */
+@import "publish-template/publish-template.wxss";
+
+page{
+ height: 100%;
+}
+.container-all{
+ height: 100%;
+ width: 100%;
+background:rgb(245, 245, 245)
+
+}

@@ -1,0 +1,53 @@
+/**index.wxss**/
+
+
+/**后续记得把基本样式写到app.wxss**/
+page{
+  height: 100%
+}
+.background{
+  width: 100%;
+  height: 100%;
+  background:rgb(247, 247, 247);
+
+}
+.input{
+  display: flex;
+
+  height: 80rpx;
+  line-height: 80rpx;
+
+}
+
+.search{
+  position: fixed;
+  top :30rpx;
+  right:40rpx;
+  width: 70rpx;
+  z-index: 1
+}
+.head{
+  position:fixed;
+  top: 0;
+  height: 120rpx ;
+  width: 100%;
+  background: #0A6E92;
+  z-index: 10;
+border-bottom: 0
+
+}
+.inside{
+  position: fixed;
+  top: 10px;
+  left: 30rpx;
+  right: 30rpx;
+  display: felx;
+  align-items: center;
+
+  z-index: 11;
+  background:#ffffff;
+  height: 80rpx;
+  border:0;
+  border-radius: 20rpx;
+}
+@import "index-template/index-template.wxss";

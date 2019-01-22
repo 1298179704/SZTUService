@@ -1,0 +1,24 @@
+.Title{
+  position: relative;
+  text-align: center;
+  color: red;
+}
+page{
+ background: rgb(243, 243, 243);
+ border-radius: 30rpx;
+}
+.content{
+  margin: 20rpx;
+  font-weight: lighter;
+    background: rgb(255, 255, 255);
+ border-radius: 30rpx;
+  box-shadow: 0rpx 0rpx 10rpx 3rpx #e2e2e2;
+  padding: 0 4rpx 0 20rpx
+
+
+}
+.red{
+  color: red;
+ 
+  
+}

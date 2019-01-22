@@ -1,0 +1,5 @@
+ 
+<view class='background' >
+ <image class="image" mode='widthFix' src='../../resource/logo.png'></image>
+ </view>
+

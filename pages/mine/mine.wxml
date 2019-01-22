@@ -1,0 +1,36 @@
+<view class='background'>
+
+  <view class='useinfo' bindtap='ToInfo'>
+
+    <open-data class="avatar" type="userAvatarUrl"></open-data>
+
+    <open-data class="nickname" type="userNickName"></open-data>
+    <image class='icon2' mode='widthFix' src='../../resource/single-arrow.png'></image>
+  </view>
+
+  <view class='button'>
+
+    <view class='bnt' bindtap='Topublish'>
+      <image class='icon' mode='widthFix' src='../../resource/publish.png'></image>
+      <text class='Title'>我发布的</text>
+      <image class='icon2' mode='widthFix' src='../../resource/single-arrow.png'></image>
+    </view>
+    <view class='bnt' bindtap='Tojoin'>
+      <image class='icon' mode='widthFix' src='../../resource/join.png'></image>
+      <text class='Title'>我加入的</text>
+      <image class='icon2' mode='widthFix' src='../../resource/single-arrow.png'></image>
+    </view>
+
+
+    <view class='bnt' bindtap='Toagree'>
+      <image class='icon' mode='widthFix' src='../../resource/agreement.png'></image>
+      <text class='Title'>协议</text>
+      <image class='icon2' mode='widthFix' src='../../resource/single-arrow.png'></image>
+    </view>
+    <view class='bnt-bottom'  bindtap='Tohelp' >
+        <image class='icon' mode='widthFix' src='../../resource/help.png'></image><text class='Title'>帮助</text><image class='icon2' mode='widthFix' src='../../resource/single-arrow.png'></image></view> 
+
+
+  </view>
+
+</view>

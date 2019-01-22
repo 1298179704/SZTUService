@@ -1,0 +1,55 @@
+<view class='background '>
+<view class='main'>
+
+<view >
+  <view class='title'><view>注册</view>  
+  <image class="RegisterIcon" mode='widthFix' src='../../resource/register1.png'></image>
+  </view>
+  <view class="column">
+    <label><span class="important_color">*</span>学号</label>
+    <input class='input-style' bindinput='SaveID' catchblur='checkid'   placeholder="输入学号或工号" type='number'></input>
+    <view class="check_icon" style='display:{{checkicon[1].icondisplay}}'>
+      <icon type="{{checkicon[1].icontype}}" size='20' color='{{checkicon[1].iconcolor}}'></icon>
+    </view>
+  </view>
+
+  <view class="column">
+    <label><span class="important_color">*</span>姓名</label>
+    <input class='input-style' bindinput='SaveName' catchblur="checkName"   placeholder="姓名和学号必须匹配"></input>
+    <view class="check_icon" style='display:{{checkicon[1].icondisplay}}'>
+      <icon type="{{checkicon[2].icontype}}" size='20' color='{{checkicon[2].iconcolor}}'></icon>
+    </view>
+  </view>
+
+  <view class="column">
+    <label><span class="important_color">*</span>手机</label>
+    <input class='input-style' bindinput='SavePNumber' catchblur='checkPnumber'   placeholder='手机号' type='number'></input>
+    <view class="check_icon" style='display:{{checkicon[0].icondisplay}}'>
+      <icon type="{{checkicon[0].icontype}}" size='20' color='{{checkicon[0].iconcolor}}'></icon>
+    </view>
+  </view>
+  <view class="row1">
+  <image class="VcodeIcon" mode='widthFix' src='../../resource/vcode.png'></image>
+    <input class='inputVcode' bindinput="SaveCode"  placeholder='输入验证码' type='number'></input>
+    <button class='getnumber' disabled='{{disabled}}' data-id="2" bindtap="getcodebtn">{{time}}</button>
+  </view>
+  <view class="WeChat">
+
+      <image class="WeChatIcon" mode='widthFix' src='../../resource/WeChat.png'></image>
+
+    <input class='input-style' type='text' bindinput='wechat' placeholder='微信号(方便联系)' cursor-spacing="50"></input>
+  </view>
+</view>
+
+<view class='row2'>
+  <view class="agree">
+    <radio color='#2E6E92' bindtap='agree' checked='{{AgreeCheck}}' />
+    <view class='agreement' bindtap='agreedetail'>
+      <span class="agree_color">同意免责声明</span>
+    </view>
+  </view>
+  <button class='submit-btn' bindtap='Submit'>提交</button>
+</view>
+</view>
+
+</view>

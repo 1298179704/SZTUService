@@ -1,0 +1,171 @@
+page{
+  height: 100%;
+  width: 100%;
+}
+.background{
+
+
+  width: 100%;
+  height: 100%;
+  background:rgb(247, 247, 247);
+
+}
+.main{
+  position: relative;
+  top: 100rpx;
+  margin:0 20rpx;
+  border-radius: 30rpx;
+  background: #ffffff;
+  box-shadow: 0rpx 0rpx 10rpx 3rpx #e2e2e2
+}
+.content{
+  position: relative;
+}
+.place-holder{
+  font-weight: lighter;
+}
+.title{
+  position: relative;
+  top: 10rpx;
+  
+  color: #5c5959;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center
+  
+
+
+}
+.RegisterIcon{
+  width: 50rpx;
+}
+.column{
+  position: relative;
+  margin: 50rpx 20rpx 0rpx 40rpx;
+  top: 50px;
+  color: #5c5959;
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.important_color{
+  color: red;
+}
+
+
+
+.input-style{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 65%;
+  
+  height: 70rpx;
+  line-height: 70rpx;
+
+ background: rgb(243, 243, 243);
+ border-radius: 30rpx;
+
+  margin: 0 0 0 80rpx ;
+
+}
+.inputVcode{
+  position: relative;
+  
+  background: rgb(243, 243, 243);
+  border-radius: 30rpx;
+  text-align: center;
+  width: 300rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin: 0 20rpx 0 90rpx;
+  
+}
+.getnumber{
+  position: relative;
+  width: 160rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  right: 30rpx;
+  font-weight: lighter;
+
+  background-color:rgb(77, 140, 177);
+  color: #ffffff
+
+
+}
+.check_icon{
+  float: right
+}
+.WeChat{
+  display: flex;
+  flex-direction: row;
+  margin: 60rpx 0rpx 20rpx 20rpx;
+  align-items: center;
+  
+
+
+}
+.WeChatIcon{
+  position: relative;
+  left: 40rpx;
+  width: 70rpx;
+
+
+}
+.VcodeIcon{
+  position: relative;
+  left: 40rpx;
+  width: 60rpx;
+
+
+}
+.row1{
+  position: relative;
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 165rpx 0rpx 20rpx 20rpx ;
+
+}
+.row2{
+  position: relative;
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 100rpx 0 0 0 ;
+  bottom: 10rpx;
+}
+.agree{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: -80rpx 10rpx 0 40rpx
+}
+.submit-btn{
+  position: relative;
+  right: -40rpx;
+  bottom: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70rpx;
+  width: 180rpx;
+  text-align: center;
+  background-color:#2E6E92;
+  border-radius: 40rpx;
+  color: white;
+
+  font-weight: lighter
+}
+.agree_color{
+  color: rgb(238, 143, 143);
+  border-bottom: 3rpx solid rgb(216, 153, 124)
+}

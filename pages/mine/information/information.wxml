@@ -1,0 +1,22 @@
+<view class='background'>
+<view class='useinfo' >
+<open-data class="avatar" type="userAvatarUrl"></open-data>
+<view class="real-name">{{name}}</view>
+<view class="MyName"><image  class="Icon" src='../../../resource/{{sex}}.png' mode="widthFix"></image><view class="Name"></view></view>
+</view>
+<view class="MyInformation">
+  
+  <view class="Phone">
+   <image class="Icon" mode='widthFix' src='../../../resource/calling.png' ></image>
+    <input disabled='false' class="horizon" type='number' placeholder=' {{phone}}'></input>
+    <button size='mini' form-type='reset' type='primary' class='reset' hidden='true' bindtap='changeinfo'>修改</button>
+  </view>
+  
+</view>
+<view class='MyInformation'>
+<view class="WeChat">
+    <label ><image class="Icon" mode='widthFix' src='../../../resource/WeChat.png' ></image></label>
+    <input disabled='false' class="horizon" placeholder='{{wechat}}'></input>
+    <button size='mini' form-type='reset' type='primary' class='reset' hidden='true' bindtap='changeinfo'>修改</button>
+  </view></view>
+</view>

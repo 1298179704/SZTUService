@@ -1,0 +1,136 @@
+.useinfo{
+
+  position: relative;
+  top: 80rpx;
+ 
+
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  margin: 0rpx 30rpx;
+  border-radius: 20rpx;
+   box-shadow: 0rpx 0rpx 10rpx 3rpx #e2e2e2;
+
+ align-items: center;
+
+
+}
+
+.avatar {
+  position: relative;
+  margin: 20rpx 50rpx;  
+  float: right;
+
+
+  overflow: hidden;
+  width: 161rpx;
+  height: 161rpx;
+  border-radius: 50%;
+
+}
+.nickname{
+ position: relative;
+ display: flex;
+ align-items: center;
+ color: #131313;
+ font-weight: lighter;
+ font-style: italic;
+}
+
+page{
+  height: 100%;
+
+}
+.background{
+
+  height: 100%;
+  width: 100%;
+  background:rgb(245, 245, 245);
+
+
+}
+.horizon{
+  display: flex;
+  align-items: center;
+  margin: 0 10rpx 0 20rpx;
+
+}
+.textcolor{
+  color: #f1a33c
+}
+
+
+
+.button{
+  
+  position: relative;
+  top: 150rpx;
+  background-color: #ffffff;
+  margin: 50rpx 30rpx 50rpx 30rpx ;
+  border-radius: 20rpx;
+   box-shadow: 0rpx 0rpx 10rpx 3rpx #e2e2e2
+
+  
+
+}
+.bnt{
+  position: relative;
+  left: 50rpx;
+  width: 80%;
+
+
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 5rpx solid rgb(245, 245, 245);
+
+
+
+  margin: 5rpx;
+  font-size: small;
+  color:rgb(68, 74, 78);
+  font-weight: normal;
+
+
+
+
+}
+.bnt-bottom{
+  position: relative;
+  left: 50rpx;
+  width: 80%;
+
+
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 5rpx;
+  font-size: small;
+  color:rgb(68, 74, 78);
+  font-weight: normal;
+
+
+
+
+}
+.Title{
+  margin: 0 50rpx;
+}
+.icon{
+  width:70rpx;
+}
+.icon2{
+  position: absolute;
+   display: flex;
+  align-items: center;
+
+  
+
+  width:70rpx;
+  right: 20rpx;
+
+}
+

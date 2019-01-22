@@ -1,0 +1,228 @@
+/** join-template.wxss **/
+
+.Content{
+  position: relative;
+  top: 50rpx;
+  margin:  0 20rpx 50rpx 20rpx;
+  background-color:#ffffff;
+  border-radius: 20rpx;
+  color:#726f6b;
+    box-shadow: 0rpx 0rpx 10rpx 3rpx #e2e2e2
+  
+}
+.type{
+
+  position: absolute;
+right: 20rpx;
+top: -40rpx;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 120rpx
+  
+
+}
+.type-icon{
+  width: 120rpx;
+  position: relative
+
+
+}
+.type-text{
+  color:rgb(255, 144, 144);
+  font-size: small;
+  position: absolute;
+  font-weight: lighter
+
+
+
+
+
+}
+.main{
+  position: relative;
+  top: 40rpx;
+}
+.Txtcolor{
+  color: rgb(224, 153, 65);
+
+
+}
+
+
+
+.start-end{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0rpx 0 30rpx 50rpx;
+  align-items: center;
+  font-size: smaller;
+   width: 85%;
+
+}
+.start-end-title{
+position: absolute;
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+.start-end-text{
+  position: relative;
+  max-width: 420rpx;
+  left: 120rpx;
+  margin: 0 10rpx ;
+ border-radius: 15rpx;
+ display: flex;
+ align-items: center;
+ justify-content: center
+  
+}
+.note{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx 0 30rpx 50rpx;
+  align-items: center;
+  font-size: smaller;
+   width: 85%;
+
+  
+
+}
+.note-title{
+position: absolute;
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+.note-text{
+  position: relative;
+  max-width: 420rpx;
+  left: 120rpx;
+  margin: 0 10rpx ;
+
+
+ border-radius: 15rpx;
+ display: flex;
+ align-items: center;
+ justify-content: center
+ 
+
+
+  
+}
+.Publisher-Calling{
+  position: absolute;
+  right: 230rpx;
+  width: 70rpx;
+
+
+
+}
+.Publisher-WeChat{
+  position: absolute;
+  right: 100rpx;
+
+  width: 70rpx;
+}
+
+
+.Calling{
+  position: absolute;
+  right: 230rpx;
+  width: 70rpx;
+
+
+}
+.WeChat{
+  position: absolute;
+  right: 100rpx;
+
+  width: 70rpx;
+}
+
+
+
+.row{
+  display: flex;
+  flex-direction: row;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 0 50rpx 10rpx 50rpx  ;
+  font-size: smaller;
+  border-bottom: 5rpx solid rgb(250, 250, 250);
+
+
+
+ 
+  
+}
+.passenger{
+  border-top: 3rpx solid #ffffff;
+  margin: 20rpx;
+  background-color: rgb(248, 248, 248);
+  border-radius: 30rpx;
+}
+.passenger-title{
+  position: relative;
+  margin: 5rpx 0;
+  
+  text-align: center
+}
+.Name{
+  margin: 0 20rpx;
+}
+.others{
+  display: flex;
+  flex-direction: row;
+
+}
+.cloumn{
+  display: flex;
+  flex-direction: cloumn;
+  align-items: center;
+  margin: 20rpx 50rpx;
+ background-color:  #ffffff;
+ border-radius: 25rpx;
+ position: relative;
+ bottom: 10rpx;
+
+
+
+}
+.edit{
+  width: 40rpx;
+}
+.icon{
+ 
+  width: 60rpx;
+  
+}
+
+
+.btn{
+position: relative;
+text-align: center;
+left: 0rpx;
+bottom: 20rpx;
+
+margin: 30rpx;
+
+border: 0;
+border-radius: 30rpx;
+
+
+}
+.exit-icon{
+  width: 40rpx;
+}
+.horizon2{
+  margin:0  50rpx;
+  
+
+
+}
+

@@ -1,0 +1,25 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.logo{
+ margin: 0 0 0  0;
+  
+}
+.image{
+  width: 100%;
+  position: relative;
+  top: 100rpx
+
+}
+page{
+  height: 100%;
+}
+.background{
+  height: 100%;
+  background-color: #0A6E92
+}

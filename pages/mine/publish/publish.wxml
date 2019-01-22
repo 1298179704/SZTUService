@@ -1,0 +1,8 @@
+<!--pages/mine/publish/publish.wxml-->
+
+<import src='publish-template/publish-template.wxml' />
+<view class='container-all'>
+  <block wx:for="{{item}}" wx:for-item="info" wx:for-index='id' wx:key="key99">
+    <template is="publishTemplate" data="{{...info,id:id}}" />
+  </block>
+</view>

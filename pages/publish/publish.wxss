@@ -1,0 +1,323 @@
+
+.picker{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: lighter;
+  margin: 35rpx 0 0 0;
+  position: relative;
+
+}
+
+.sort-icon{
+  width: 10%;
+ display: flex;
+ position: absolute;
+ left: 45.6%;
+ top: 82rpx;
+
+
+
+
+}
+
+.publish {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 25rpx;
+}
+.Notice{
+  position: relative;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background: #ffffff;
+  box-shadow: 0rpx 0rpx 10rpx 3rpx #e2e2e2;
+  border-radius: 20rpx;
+  color: rgb(245, 153, 153);
+
+}
+.Notice-content{
+  display: flex;
+  color: #e9c18e;
+  margin: 10rpx;
+  font-size: small
+}
+.Notice-Title{
+  position: relative;
+  display: flex;
+  align-items: center;
+justify-content: center;
+  max-width: 80rpx;
+  background: #f3f3f3;
+  box-shadow: 0rpx 0rpx 10rpx 3rpx #f0efef;
+  border-radius: 5rpx;
+  font-size: x-small
+
+  
+}
+
+.Note {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 40rpx 20rpx 20rpx;
+}
+
+.Start {
+  width: 70rpx;
+  margin: 20rpx 40rpx 20rpx 20rpx;
+}
+
+.Destination {
+  width: 70rpx;
+  margin: 20rpx 40rpx 20rpx 20rpx;
+}
+
+
+
+.StartEnd {
+  display: flex;
+  flex-direction: column;
+}
+
+.Date {
+  width: 70rpx;
+  margin: 20rpx 40rpx 20rpx 20rpx;
+}
+
+.Time {
+  width: 70rpx;
+  margin: 20rpx 40rpx 20rpx 20rpx;
+}
+
+.NoteIcon {
+  width: 70rpx;
+  margin: 20rpx 40rpx 20rpx 20rpx;
+}
+
+.Phone {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 40rpx 20rpx 20rpx;
+}
+
+.MyName {
+  width: 80%;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 20rpx 40rpx 20rpx 20rpx;
+}
+
+
+page {
+  height: 100%;
+}
+
+.background {
+  background-color: rgb(245, 245, 245);
+  height: 100%;
+  width: 100%;
+}
+
+.Information {
+  position: relative;
+  margin: 20rpx;
+  border-radius: 20rpx;
+  background: #ffffff;
+  box-shadow: 0rpx 0rpx 10rpx 3rpx #e2e2e2;
+
+  
+}
+
+.WeChat {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 40rpx 20rpx 20rpx;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: lighter;
+  color: #4d4b4b;
+  margin: 0 0 0 40rpx;
+  position: relative;
+
+
+}
+
+.horizon{
+  width: 70%;
+  margin: 25rpx 40rpx 20rpx 20rpx;
+  background: rgb(243, 243, 243);
+  border-radius: 20rpx;
+  font-weight: lighter;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  min-height: 55rpx;
+}
+
+.horizon2{
+  width: 70%;
+  height: 55rpx;
+  line-height: 55rpx;
+
+  font-weight: lighter;
+    font-size: large;
+
+  margin: 30rpx 40rpx 20rpx 20rpx;
+ background: rgb(243, 243, 243);
+ border-radius: 20rpx;
+
+}
+.text{
+  margin: 0 20rpx
+}
+.horizon3{
+  width: 80%;
+  height: 55rpx;
+  text-align: start;
+  font-weight: lighter;
+  margin: 30rpx 40rpx 20rpx 30rpx;
+  background: rgb(243, 243, 243);
+ border-radius: 30rpx;
+ padding: 0 20rpx
+}
+
+.MyName {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 40rpx 20rpx 20rpx;
+}
+.CarType {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: 20rpx 0 20rpx 40rpx;
+  align-items: center;
+
+}
+
+.CarTypeChoose {
+  widows: 70%;
+  position: relative;
+  left: 15%;
+
+ 
+}
+
+.cartype-title{
+ position: relative;
+ left: 50rpx;
+ display: flex;
+ flex-direction: row;
+ font-size: x-small;
+ color: rgb(4, 92, 124);
+
+
+}
+.CarTypeIcon {
+  position: relative;
+  width: 30%;
+  left: 10%;
+
+
+
+
+}
+
+.SubmitButton {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  right: 10%;
+  width: 80%;
+  height: 90rpx;
+  bottom: -120rpx;
+  border-radius: 60rpx;
+  background-color: #2e6e92;
+  color: #ffffff;
+}
+.type{
+  width: 40%;
+  background-color: #f59999;
+  border-width: 15rpx;
+  position: relative;
+  left: 8%;
+  border-radius: 15rpx;
+  text-align: center;
+  color: #ffffff;
+  margin: 15rpx 0 5rpx 0 ;
+    border: 0;
+
+}
+.transport{
+  width: 40%;
+  background-color:#15A892;
+  position: relative;
+  left: 14%;
+  border: 0;
+
+  border-radius: 15rpx;
+  text-align: center;
+  color: #ffffff;
+  margin: 15rpx 0 5rpx 0 ;
+  
+}
+.typeContent{
+  font-size: 38rpx;
+}
+.transportContent{
+  font-size: 38rpx;
+
+}
+
+
+.number {
+  width: 40%;
+  background-color: #5b84b3;
+  position: relative;
+  left: 8%;
+  border-radius: 15rpx;
+  text-align: center;
+  color: #ffffff;
+  margin: 5rpx 0 15rpx 0 ;
+    border: 0;
+
+
+}
+
+.gender {
+ width: 40%;
+  background-color: #E9844E;
+  position: relative;
+  left: 14%;
+  border-radius: 15rpx;
+  text-align: center;
+    border: 0;
+
+
+  color: #ffffff;
+  margin: 5rpx 0 15rpx 0 ;
+  
+
+
+}
+.person_one{
+  font-size: 38rpx;
+}
+.gender-limitation{
+  font-size: 38rpx;
+
+}
+
+.PublishIcon {
+  width: 70rpx;
+}

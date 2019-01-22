@@ -1,0 +1,27 @@
+<!--pages/mine/help/help.wxml-->
+
+<view class="background">
+<image class='arrow-left' hidden='{{left}}' mode='widthFix' src='../../resource/arrow-left.png' ></image>
+
+
+
+  <swiper bindchange='arrow' class='content' indicator-dots='true' indicator-color='#0A6E92' indicator-active-color='#e9ba78'>
+   <swiper-item>
+   <image class='img-help' mode='widthFix' src='https://www.sztu.top/img/help3.png' ></image>
+  </swiper-item>
+     <swiper-item>
+   <image class='img-help'  mode='widthFix' src='https://www.sztu.top/img/help1.png' ></image>
+   
+  </swiper-item>
+     <swiper-item>
+   <image class='img-help' mode='widthFix' src='https://www.sztu.top/img/help2.png' ></image>
+  </swiper-item>
+    <swiper-item>
+   <image class='img-help' mode='widthFix' bindtap='toindex' src='../../resource/logo1.png' ></image>
+  </swiper-item>
+
+
+  </swiper>
+<image class='arrow-right' hidden='{{right}}' mode='widthFix' src='../../resource/arrow-right.png' ></image>
+</view>
+

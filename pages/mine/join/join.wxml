@@ -1,0 +1,7 @@
+
+ <import src='join-template/join-template.wxml' />
+ <view class='background'>
+<block wx:for="{{item}}" wx:for-item="info" wx:key="key55">
+  <template is="joinTemplate" data="{{...info}}"/>
+</block>
+</view>

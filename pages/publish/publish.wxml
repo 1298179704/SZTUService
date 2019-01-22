@@ -1,0 +1,70 @@
+<view class='background'>
+  <view class='publish'>
+     <view class='Notice'><view class="Notice-Title">提醒!</view><view class='Notice-content'>活动产生的费用由参与活动的成员平均分担或自行安排, 本小程序不参与，不负责活动费用的分配和安排</view></view>
+
+    <view class='Information'>
+    
+    <view class='picker'>
+        <picker class="type" range='{{selectactivitytype}}' mdoe='selector' value='{{acttypevalue}}' bindchange='acttype'><view class="typeContent">活动类型:{{selectactivitytype[acttypevalue]}}</view>
+        </picker>
+
+        <picker class='transport' range='{{selectTripmode}}' mdoe='selector' value='{{Tripmodevalue}}' bindchange='transport'><view class='transportContent'>出行方式:{{selectTripmode[Tripmodevalue]}}</view>
+        </picker>
+      </view>
+
+            <image class="sort-icon" mode='widthFix' src='../../resource/type.png'></image>
+
+   
+          
+      <view class='picker'>
+        <picker class="number" mdoe='selector' range='{{selectPerson}}' value='{{personvalue}}' bindchange='person'>
+          <view class="person_one">需求人数：{{selectPerson[personvalue]}}</view>
+        </picker>
+        <picker class='gender' range='{{selectgender}}' mdoe='selector' value='{{gendervalue}}' bindchange='gender'><view class='gender-limitation'>招募对象:{{selectgender[gendervalue]}}</view>
+        </picker>
+      </view>
+   
+
+      <view class="StartEnd">
+        <view class="row">
+          <image class="Start" mode='widthFix' src='../../resource/Start.png'></image>
+          <view class="horizon" bindtap='chooseStartLocation'>
+            <view class='text'> {{StartName}}</view>
+          </view>
+        </view>
+        <view class="row">
+          <image class="Destination" mode='widthFix' src='../../resource/End.png'></image>
+          <view class="horizon" bindtap='chooseEndLocation'>
+            <view class='text'> {{EndName}}</view>
+          </view>
+        </view>
+      </view>
+
+      <picker mode="date" value="{{date}}" start="{{startdate}}" end="{{enddate}}" bindchange='DateChange'>
+        <view class="row">
+          <image class="Date" mode='widthFix' src='../../resource/Date.png' bindtap=' DateChange'></image>
+          <view class="horizon2"><view class='text'>  {{date}}</view></view>
+        </view>
+      </picker>
+
+      <picker mode="time" value='{{time}}' start="00：00" end="24:00" bindchange='TimeChange'>
+        <view class="row">
+          <image class="Time" mode='widthFix' src='../../resource/Time.png' bindtap=' TimeChange'></image>
+          <view class="horizon2"> <view class='text'> {{time}}</view></view>
+        </view>
+      </picker>
+
+      <view class="row">
+        <image class="NoteIcon" mode='widthFix' bindtap='notedetail' src='../../resource/Note.png'></image>
+        <input class="horizon3" type='text' placeholder='备注信息' bindinput='NoteChange' maxlength='25'></input>
+      </view>
+
+    </view>
+
+    <button class='SubmitButton' size='default' bindtap='InformationSubmit'>
+      <image class='PublishIcon' src='../../resource/publish-icon.png' mode='widthFix'></image>
+      <view>发布</view>
+    </button>
+
+  </view>
+</view>

@@ -1,0 +1,97 @@
+<template name="publishTemplate">
+
+  <view class="Content">
+
+    <view class='main'>
+    <view class='type' >
+    <image class='type-icon' mode='widthFix' src='../../../resource/type-icon.png'> </image>
+    <view class='type-text'>{{acttype}}</view>
+    
+    </view>
+    
+      <view class='start-end'><view class='start-end-title'>活动集合：</view><view class='start-end-text'>{{start_name}}</view></view>
+      <view class='start-end'><view class='start-end-title'>活动地点：</view><view class='start-end-text'>{{end_name}}</view></view>
+      <view class='row'>
+        活动时间：{{date}} {{time}}
+      </view>
+      <view class="row">
+        出行方式：{{tripmode}}</view>
+      <view class="row">
+
+        <view class='horizon'>活动需求：
+          <picker class="number" mdoe='selector' range='{{selectPerson}}' value='{{personvalue}}' catchchange='person' data-person='{{personvalue}}' data-danhao='{{danhao}}' disabled='{{disabled_change==0}}'>
+            <view class='horizon'>需要
+              <span class="Txtcolor">{{people}}</span>人
+              <image class='edit' src='../../../resource/edit.png' mode='widthFix' wx:if='{{disabled_change==1}}'></image>
+              <image class='edit' src='../../../resource/edit2.png' mode='widthFix' wx:if='{{disabled_change==0}}'></image>
+            </view>
+          </picker>
+            <view class='horizon'> 招募对象
+              <span class="Txtcolor">{{sex}}</span></view>
+
+        </view>
+
+      </view>
+
+
+
+
+      <view class='note'>
+        <view class='note-title'>
+          活动备注：</view>
+       
+        <view wx:if="{{disable==1}}" class='horizon2'>
+          <view class='note-text'> {{note}}
+          </view>
+          <image class='Edit-note' src='../../../resource/edit.png' mode='widthFix' bindtap='EditNote' data-id='{{id}}' wx:if='{{disabled_change==1}}'></image>
+          <image class='Edit-note' src='../../../resource/edit2.png' mode='widthFix' wx:if='{{disabled_change==0}}'></image>
+
+        </view>
+
+        <view class="note-text" wx:elif="{{disable==0}}">
+          <input class='newinput' value='{{note}}' maxlength='25' bindblur='note' focus='True' data-note='{{note}}' data-danhao='{{danhao}}' data-id='{{id}}'></input>
+
+
+        </view>
+      </view>
+   
+
+
+
+
+      <!-- 乘客信息 -->
+      <view class='passenger'>
+        <view class='passenger-title'>已加入<span class="Txtcolor">{{joined}}</span>人(还需要：<span class="Txtcolor">{{surplus}}</span>人)
+
+        </view>
+        <!-- 加入者信息，列表渲染 -->
+        <block wx:for="{{joiner}}" wx:for-item='item' wx:key='key883'>
+
+          <!-- 乘客单条信息 -->
+          <view class='cloumn'>
+            <view>{{item.name}}</view>
+            <image class='icon' mode='widthFix' src='../../../resource/{{item.sex}}.png'></image>
+<image wx:if="{{disabled_cell==1}}" class="WeChat" mode='widthFix' src='../../../resource/WeChat.png' bindtap='calling' bindtap='calling' data-sid='{{item.id}}' data-order='1' data-danhao='{{danhao}}'></image>
+            <image wx:if="{{disabled_cell==0}}" class="WeChat" mode='widthFix' src='../../../resource/WeChat2.png'></image>
+            <image wx:if="{{disabled_cell==1}}" class='Calling' mode='widthFix' src='../../../resource/calling.png' bindtap='calling' data-sid='{{item.id}}' data-order='0' data-danhao='{{danhao}}'></image>
+            <image wx:if="{{disabled_cell==0}}" class='Calling' mode='widthFix' src='../../../resource/calling2.png'></image>
+          </view>
+
+
+
+
+
+        </block>
+
+      </view>
+      <!-- 下方按钮 -->
+      <view class='button'>
+        <button disabled='{{disable_cancel}}' size='mini' type='warn' class="btn" bindtap='ChangeActState' data-danhao='{{danhao}}' data-order='2' data-id='{{id}}'>{{order1}}</button>
+
+        <button disabled='{{disable_zhaomu}}' size='mini' class="btn1" bindtap='ChangeActState' data-danhao='{{danhao}}' data-order='1' data-id='{{id}}'>{{order2}}</button>
+
+      </view>
+    </view>
+
+  </view>
+</template>

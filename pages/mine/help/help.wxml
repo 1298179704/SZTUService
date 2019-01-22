@@ -1,0 +1,25 @@
+<!--pages/mine/help/help.wxml-->
+
+<view class="background">
+ <view class="title">滑动以查阅使用教程</view>
+
+
+  <swiper class='content' indicator-dots='true' indicator-color='#0A6E92' indicator-active-color='#e9ba78'>
+   <swiper-item>
+   <image class='img-help' mode='widthFix' src='https://www.sztu.top/img/help3.png' ></image>
+  </swiper-item>
+     <swiper-item>
+   <image class='img-help'  mode='widthFix' src='https://www.sztu.top/img/help1.png' ></image>
+   
+  </swiper-item>
+     <swiper-item>
+   <image class='img-help' mode='widthFix' src='https://www.sztu.top/img/help2.png' ></image>
+  </swiper-item>
+
+
+  </swiper>
+  <view class='help' bindtap='copymail'><text>更多帮助&反馈：</text>
+   <view class='mail'>1175459652@qq.com</view></view>
+
+</view>
+

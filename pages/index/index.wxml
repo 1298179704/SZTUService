@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class='background'>
+  <import src='index-template/index-template.wxml' />
+  <view class="head">
+  </view>
+  <view class='inside'>
+    <input class="input"  maxlength='12' placeholder=' 搜索 ' bindinput='search_input' value="{{search}}"></input>
+    <image class="search" mode='widthFix' src='../../resource/search.png' bindtap='search'></image>
+  </view>
+  <block wx:for="{{item}}" wx:for-item="info" wx:for-index='idx' wx:key="key1">
+    <template is="indexTemplate" data="{{...info,idx:idx}}" />
+  </block>
+</view>
