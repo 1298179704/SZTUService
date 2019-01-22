@@ -1,7 +1,5 @@
 /**index.wxss**/
 
-
-/**后续记得把基本样式写到app.wxss**/
 page{
   height: 100%
 }
@@ -11,19 +9,51 @@ page{
   background:rgb(247, 247, 247);
 
 }
-.input{
-  display: flex;
+.From{
+  position: fixed;
+  top :27rpx;
+  left :40rpx;
+  min-height: 1rem;
+  height: 70rpx;
+  width: 250rpx ;
+  text-align: center;
 
-  height: 80rpx;
-  line-height: 80rpx;
+
+  z-index: 1
+}
+.To{
+  position: fixed;
+  top :27rpx;
+  left:370rpx;
+  min-height: 1rem;
+  height: 70rpx;
+  width: 250rpx;
+  text-align: center;
+  z-index: 1;
+    display: flex;
+  align-items: center;
+
+
 
 }
+.arrow{
+  position:fixed;
+  display: flex;
+  align-items: center;
+  left:300rpx;
+  top: 30rpx;
 
+  z-index: 1;
+
+
+
+
+}
 .search{
   position: fixed;
   top :30rpx;
   right:40rpx;
-  width: 70rpx;
+
   z-index: 1
 }
 .head{
@@ -33,7 +63,7 @@ page{
   width: 100%;
   background: #0A6E92;
   z-index: 10;
-border-bottom: 0
+
 
 }
 .inside{
@@ -43,11 +73,14 @@ border-bottom: 0
   right: 30rpx;
   display: felx;
   align-items: center;
+  font-weight: lighter;
 
   z-index: 11;
-  background:#ffffff;
+  background:#fffbf8;
+
+  
   height: 80rpx;
-  border:0;
-  border-radius: 20rpx;
+  border: 1rpx rgb(86, 146, 180) solid;
+  border-radius: 30rpx;
 }
 @import "index-template/index-template.wxss";

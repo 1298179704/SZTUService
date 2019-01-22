@@ -3,7 +3,7 @@
   <view class='majority'>
   <view class='type'>活动类型：{{acttype}}</view>
   <button class="join-button" bindtap='join' data-idx='{{idx}}' data-danhao='{{danhao}}'>
-        <image disabled='{{btn_state}}' class='join-icon' mode='widthFix' src='../../resource/join-icon.png'></image>
+        <image disabled='{{btn_state}}' style='  width: 35rpx;'  mode='widthFix' src='../../resource/join-icon.png'></image>
         <view>报名</view>
       </button>
 
@@ -18,27 +18,27 @@
     
       <view class='start-end'>
    
-      <view class='start-end-title'>   <image class='index-rowicon' mode='widthFix' src='../../resource/index-start.png'></image>活动集合：</view>
+      <view class='start-end-title'>   <image style='  width: 50rpx;' mode='widthFix' src='../../resource/index-start.png'></image>活动集合：</view>
        <view class='start-end-text'>{{start_name}}</view>
        </view>
       <view class='start-end'>
      
-      <view class='start-end-title'> <image class='index-rowicon' mode='widthFix' src='../../resource/index-end.png'></image>活动地点：</view> 
+      <view class='start-end-title'> <image style='  width: 50rpx;' mode='widthFix' src='../../resource/index-end.png'></image>活动地点：</view> 
       <view class='start-end-text'>{{end_name}}</view>
       </view>
 
       
       <view class="row">
-        <image class='index-rowicon' mode='widthFix' src='https://www.sztu.top/img/index-name.png'></image>活动发起：{{creater_name}}
-        <image class='index-rowicon' mode='widthFix' src='https://www.sztu.top/img/{{creater_sex}}.png'></image>
+        <image style='  width: 50rpx;' mode='widthFix' src='https://www.sztu.top/img/index-name.png'></image>活动发起：{{creater_name}}
+        <image style='  width: 50rpx;' mode='widthFix' src='https://www.sztu.top/img/{{creater_sex}}.png'></image>
       <view class='member-title'>{{person_type}} </view>
       </view>
       <view class='row'>
-        <image class='index-rowicon' mode='widthFix' src='https://www.sztu.top/img/index-time.png'></image>活动时间：
+        <image style='  width: 50rpx;' mode='widthFix' src='https://www.sztu.top/img/index-time.png'></image>活动时间：
         <span class="Txtcolor">{{date}} {{time}}</span>
       </view>
             <view class="row">
-        <image class='index-rowicon' mode='widthFix' src='https://www.sztu.top/img/index-number.png'></image>活动需求：
+        <image style='  width: 50rpx;' mode='widthFix' src='https://www.sztu.top/img/index-number.png'></image>活动需求：
         <span class="Txtcolor">{{surplus}}</span>人
         <view class='gender'> 招募对象：<span class="Txtcolor">{{sex}}</span>
         </view>
@@ -46,7 +46,7 @@
       </view>
 
       <view class="row">
-        <image class='index-rowicon' mode='widthFix' src='https://www.sztu.top/img/index-type.png'></image>出行方式： <span class="Txtcolor"> {{tripmode}} </span> 
+        <image style='  width: 50rpx;' mode='widthFix' src='https://www.sztu.top/img/index-type.png'></image>出行方式： <span class="Txtcolor"> {{tripmode}} </span> 
         <text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>共
         <span class="Txtcolor"> {{people1}}</span> 人活动</view>
 
@@ -54,7 +54,7 @@
       <view class="note">
 
         <view class='note-title'>
-          <image class='index-rowicon' mode='widthFix' src='https://www.sztu.top/img/index-note.png'></image>
+          <image style='  width: 50rpx;' mode='widthFix' src='https://www.sztu.top/img/index-note.png'></image>
           <view>备注信息:</view>
         </view>
 

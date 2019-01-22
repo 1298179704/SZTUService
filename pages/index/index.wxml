@@ -3,9 +3,12 @@
   <import src='index-template/index-template.wxml' />
   <view class="head">
   </view>
-  <view class='inside'>
-    <input class="input"  maxlength='12' placeholder=' 搜索 ' bindinput='search_input' value="{{search}}"></input>
-    <image class="search" mode='widthFix' src='../../resource/search.png' bindtap='search'></image>
+ <view class='inside'>
+    <input class="From" placeholder='出发点' maxlength='12' bindinput='From'></input>
+    <image class='arrow' style='width:60rpx;' src='../../resource/arrow3.png' mode='widthFix'></image>
+
+    <input class="To" placeholder='目的地' maxlength='12' bindinput='To'></input>
+    <image class="search" style='  width: 70rpx;' mode='widthFix' src='../../resource/search.png' bindtap='search'></image>
   </view>
   <block wx:for="{{item}}" wx:for-item="info" wx:for-index='idx' wx:key="key1">
     <template is="indexTemplate" data="{{...info,idx:idx}}" />

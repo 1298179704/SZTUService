@@ -4,6 +4,7 @@
  <view class="title">滑动以查阅使用教程</view>
 
 
+
   <swiper class='content' indicator-dots='true' indicator-color='#0A6E92' indicator-active-color='#e9ba78'>
    <swiper-item>
    <image class='img-help' mode='widthFix' src='https://www.sztu.top/img/help3.png' ></image>
@@ -13,13 +14,20 @@
    
   </swiper-item>
      <swiper-item>
-   <image class='img-help' mode='widthFix' src='https://www.sztu.top/img/help2.png' ></image>
+   <image class='img-help' mode='widthFix'  src='https://www.sztu.top/img/help2.png' ></image>
   </swiper-item>
 
 
   </swiper>
-  <view class='help' bindtap='copymail'><text>更多帮助&反馈：</text>
-   <view class='mail'>1175459652@qq.com</view></view>
+  
+
+
+  <button class='service'  style=' font-size:x-small;'  open-type="contact" >
+       <image class='icon' mode='widthFix' style='width:40rpx;'  src='../../../resource/service.png' ></image>
+  <view>客服</view>
+
+  </button>
+
 
 </view>
 
