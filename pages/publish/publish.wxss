@@ -11,6 +11,7 @@
 
 .sort-icon{
   width: 10%;
+  height: auto;
  display: flex;
  position: absolute;
  left: 45.6%;
@@ -33,6 +34,7 @@
   display: flex;
   flex-direction: column;
   width: 90%;
+  height: auto;
   background: #ffffff;
   box-shadow: 0rpx 0rpx 10rpx 3rpx #e2e2e2;
   border-radius: 20rpx;
@@ -67,11 +69,13 @@ justify-content: center;
 
 .Start {
   width: 70rpx;
+  height: auto;
   margin: 20rpx 40rpx 20rpx 20rpx;
 }
 
 .Destination {
   width: 70rpx;
+  height: auto;
   margin: 20rpx 40rpx 20rpx 20rpx;
 }
 

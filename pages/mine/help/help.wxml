@@ -23,7 +23,7 @@
 
 
   <button class='service'  style=' font-size:x-small;'  open-type="contact" >
-       <image class='icon' mode='widthFix' style='width:40rpx;'  src='../../../resource/service.png' ></image>
+       <image mode='widthFix' style='width:40rpx;'  src='../../../resource/service.png' ></image>
   <view>客服</view>
 
   </button>

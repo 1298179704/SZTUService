@@ -37,9 +37,7 @@ page{
 
 
 }
-.RegisterIcon{
-  width: 50rpx;
-}
+
 .column{
   position: relative;
   margin: 50rpx 20rpx 0rpx 40rpx;
@@ -111,20 +109,7 @@ page{
 
 
 }
-.WeChatIcon{
-  position: relative;
-  left: 40rpx;
-  width: 70rpx;
 
-
-}
-.VcodeIcon{
-  position: relative;
-  left: 40rpx;
-  width: 60rpx;
-
-
-}
 .row1{
   position: relative;
  
@@ -168,4 +153,21 @@ page{
 .agree_color{
   color: rgb(238, 143, 143);
   border-bottom: 3rpx solid rgb(216, 153, 124)
+}
+.service{
+  font-size: small;
+  position: absolute;
+  z-index: 100;
+  bottom: 5rpx;
+  left: 35%;
+  width: 30%;
+  font-weight: lighter;
+  background-color: #0A6E92;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+justify-content: center
+
+  
 }
