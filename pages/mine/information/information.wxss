@@ -25,6 +25,7 @@
 }
 .Icon{
   width: 90rpx;
+  height: auto;
 }
 .useinfo{
 

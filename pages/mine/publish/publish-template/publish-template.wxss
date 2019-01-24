@@ -52,6 +52,7 @@ width: 120rpx
 }
 .type-icon{
   width: 120rpx;
+  height: auto;
   position: relative
 
 
@@ -94,6 +95,7 @@ width: 120rpx
   position: absolute;
   right: 230rpx;
   width: 70rpx;
+  height: auto;
 
 
 }
@@ -102,6 +104,7 @@ width: 120rpx
   right: 100rpx;
 
   width: 70rpx;
+  height: auto;
 }
 
 
@@ -129,6 +132,7 @@ width: 120rpx
   margin: 0 0 0 0 ;
 
   width: 60rpx;
+  height: auto;
 
 
 
@@ -184,12 +188,14 @@ margin: 10rpx
   position: relative;
 
   width: 40rpx;
+  height: auto;
   margin: 0 50rpx 0 10rpx;
 }
 
 .icon{
  
   width: 60rpx;
+  height: auto;
   
 }
 .horizon{
@@ -240,6 +246,7 @@ justify-content: center;
 
   min-width: 40rpx;
   max-width: 40rpx;
+  height: auto;
 
 }
 .passenger-title{
@@ -250,6 +257,7 @@ justify-content: center;
 }
 .cloumn-icon{
   width: 40rpx;
+  height: auto;
 }
 .horizon2{
   display: flex;

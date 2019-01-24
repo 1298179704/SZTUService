@@ -121,6 +121,7 @@ page{
 }
 .icon{
   width:70rpx;
+  height: auto;
 }
 .icon2{
   position: absolute;
@@ -130,6 +131,7 @@ page{
   
 
   width:70rpx;
+  height: auto;
   right: 20rpx;
 
 }

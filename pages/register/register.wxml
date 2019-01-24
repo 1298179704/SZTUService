@@ -3,7 +3,7 @@
 
 <view >
   <view class='title'><view>注册</view>  
-  <image class="RegisterIcon" mode='widthFix' src='../../resource/register1.png'></image>
+  <image style='  width: 50rpx; height:auto' mode='widthFix' src='../../resource/register1.png'></image>
   </view>
   <view class="column">
     <label><span class="important_color">*</span>学号</label>
@@ -29,13 +29,13 @@
     </view>
   </view>
   <view class="row1">
-  <image class="VcodeIcon" mode='widthFix' src='../../resource/vcode.png'></image>
+  <image style='  position: relative;left: 40rpx; width: 60rpx; height:auto' mode='widthFix' src='../../resource/vcode.png'></image>
     <input class='inputVcode' bindinput="SaveCode"  placeholder='输入验证码' type='number'></input>
     <button class='getnumber' disabled='{{disabled}}' data-id="2" bindtap="getcodebtn">{{time}}</button>
   </view>
   <view class="WeChat">
 
-      <image class="WeChatIcon" mode='widthFix' src='../../resource/WeChat.png'></image>
+      <image  style='  position: relative;left: 40rpx; width: 70rpx;  height:auto' mode='widthFix' src='../../resource/WeChat.png'></image>
 
     <input class='input-style' type='text' bindinput='wechat' placeholder='微信号(方便联系)' cursor-spacing="50"></input>
   </view>
@@ -51,5 +51,10 @@
   <button class='submit-btn' bindtap='Submit'>提交</button>
 </view>
 </view>
+  <button class='service'  style=' font-size:x-small;'  open-type="contact" >
+       <image mode='widthFix' style='width:40rpx;  height:auto'  src='../../resource/service.png' ></image>
+  <view>寻求帮助</view>
+
+  </button>
 
 </view>
