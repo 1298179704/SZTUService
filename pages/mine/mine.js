@@ -31,7 +31,7 @@ Page({
   },
   Tohelp() {
     wx.navigateTo({
-      url: 'help/help?registered=0'
+      url: 'help/help'
     })
   }
 
