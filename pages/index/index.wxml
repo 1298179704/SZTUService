@@ -4,10 +4,10 @@
   <view class="head">
   </view>
  <view class='inside'>
-    <input class="From" placeholder='出发点' maxlength='12' bindinput='From'></input>
+    <input class="From" maxlength='12' bindinput='From' value='{{start}}'></input>
     <image class='arrow' style='width:60rpx;' src='../../resource/arrow3.png' mode='widthFix'></image>
 
-    <input class="To" placeholder='目的地' maxlength='12' bindinput='To'></input>
+    <input class="To" maxlength='12' bindinput='To' value='{{end}}'></input>
     <image class="search" style='  width: 70rpx;' mode='widthFix' src='../../resource/search.png' bindtap='search'></image>
   </view>
   <block wx:for="{{item}}" wx:for-item="info" wx:for-index='idx' wx:key="key1">

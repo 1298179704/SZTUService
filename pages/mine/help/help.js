@@ -2,7 +2,6 @@
 Page({
 
   data: {
-    mail: "1175459652@qq.com"
   },
  
 

@@ -1,17 +1,25 @@
 const app = getApp()
 Page({
   data: {
-    search: "",
-    item: []
+    start: "",
+    end: "",
+    item: [],
+    start_search: "",
+    end_search: ""
   },
-  search_input(e) {
+  To(e) {
     this.setData({
-      search: e.detail.value
+      end: e.detail.value
+    })
+  },
+  From(e) {
+    this.setData({
+      start: e.detail.value
     })
   },
   search() {
     let that = this
-    if (this.data.search != "") {
+    if (this.data.end != "" || this.data.start != "") {
       wx.showLoading({
         title: '搜索中...',
       })
@@ -19,7 +27,8 @@ Page({
         url: app.globalData.sztuAPI_search,
         data: {
           login_id: app.globalData.login_id,
-          search: this.data.search,
+          start: this.data.start,
+          end: this.data.end,
         },
         success(res) {
           wx.hideLoading()
@@ -28,7 +37,9 @@ Page({
             let ndate = that.changedate(data)
             let ndata = that.numbertoname(ndate)
             that.setData({
-              item: ndata
+              item: ndata,
+              start_search: res.data.start,
+              end_search: res.data.end
             })
           } else if (res.data.errcode == '123') {
             wx.showModal({
@@ -53,7 +64,7 @@ Page({
           })
         }
       })
-    }else{
+    } else {
       wx.showModal({
         title: '哦豁',
         content: '请输入你要搜索活动相关地点信息',
@@ -74,45 +85,90 @@ Page({
             mask: true
           })
           let danhao = e.currentTarget.dataset.danhao
-          wx.request({
-            url: app.globalData.sztuAPI_join,
-            data: {
-              login_id: app.globalData.login_id,
-              danhao: danhao
-            },
-            success(res) {
-              wx.hideLoading()
-              if (res.data.errcode == "0") {
-                wx.showToast({
-                  title: '加入成功',
-                })
-                setTimeout(function() {
-                  wx.navigateTo({
-                    url: '../mine/join/join'
+          if (that.data.start_search == "" && that.data.end_search == "") {
+            wx.request({
+              url: app.globalData.sztuAPI_join,
+              data: {
+                login_id: app.globalData.login_id,
+                danhao: danhao
+              },
+              success(res) {
+                wx.hideLoading()
+                if (res.data.errcode == "0") {
+                  wx.showToast({
+                    title: '加入成功',
                   })
-                }, 600)
+                  setTimeout(function() {
+                    wx.navigateTo({
+                      url: '../mine/join/join'
+                    })
+                  }, 600)
 
 
-              } else if (res.data.errcode == "125") {
-                let id = e.currentTarget.dataset.idx
-                that.setData({
-                  [`item[${id}].btn_state`]: true
-                })
-                wx.showModal({
-                  title: '加入失败',
-                  content: res.data.errmsg,
-                  showCancel: false
-                })
-              } else {
-                wx.showModal({
-                  title: '加入失败',
-                  content: res.data.errmsg,
-                  showCancel: false
-                })
+                } else if (res.data.errcode == "125") {
+                  let id = e.currentTarget.dataset.idx
+                  that.setData({
+                    [`item[${id}].btn_state`]: true
+                  })
+                  wx.showModal({
+                    title: '加入失败',
+                    content: res.data.errmsg,
+                    showCancel: false
+                  })
+                } else {
+                  wx.showModal({
+                    title: '加入失败',
+                    content: res.data.errmsg,
+                    showCancel: false
+                  })
+                }
+
               }
+            })
+          } else {
+            wx.request({
+              url: app.globalData.sztuAPI_join,
+              data: {
+                login_id: app.globalData.login_id,
+                danhao: danhao,
+                start: that.data.start_search,
+                end: that.data.end_search
+              },
+              success(res) {
+                console.log(res)
+                wx.hideLoading()
+                if (res.data.errcode == "0") {
+                  wx.showToast({
+                    title: '加入成功',
+                  })
+                  setTimeout(function() {
+                    wx.navigateTo({
+                      url: '../mine/join/join'
+                    })
+                  }, 600)
 
-            }
-          })
+
+                } else if (res.data.errcode == "125") {
+                  let id = e.currentTarget.dataset.idx
+                  that.setData({
+                    [`item[${id}].btn_state`]: true
+                  })
+                  wx.showModal({
+                    title: '加入失败',
+                    content: res.data.errmsg,
+                    showCancel: false
+                  })
+                } else {
+                  wx.showModal({
+                    title: '加入失败',
+                    content: res.data.errmsg,
+                    showCancel: false
+                  })
+                }
+
+              }
+            })
+          }
         }
       }
     })
@@ -136,7 +192,11 @@ Page({
           let ndate = that.changedate(data)
           let ndata = that.numbertoname(ndate)
           that.setData({
-            item: ndata
+            item: ndata,
+              start: "",
+              end: "",
+              start_search: "",
+              end_search: ""
           })
         } else if (res.data.errcode == "123") {
           wx.showModal({
@@ -195,9 +255,6 @@ Page({
   },
   //代码转名字
   numbertoname: function(e) {
-    this.setData({
-      search: ""
-    })
     for (let key in e) {
       let type = e[key]["tripmode"]
       if (type == "0") {
