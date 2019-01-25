@@ -8,6 +8,10 @@
     <image class='icon2' mode='widthFix' src='../../resource/single-arrow.png'></image>
   </view>
 
+
+
+
+
   <view class='button'>
 
     <view class='bnt' bindtap='Topublish'>
@@ -29,6 +33,9 @@
     </view>
     <view class='bnt-bottom'  bindtap='Tohelp' >
         <image class='icon' mode='widthFix' src='../../resource/help.png'></image><text class='Title'>帮助</text><image class='icon2' mode='widthFix' src='../../resource/single-arrow.png'></image></view> 
+
+
+
 
 
   </view>

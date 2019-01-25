@@ -3,14 +3,18 @@
   <import src='index-template/index-template.wxml' />
   <view class="head">
   </view>
- <view class='inside'>
-    <input class="From" maxlength='12' bindinput='From' value='{{start}}'></input>
-    <image class='arrow' style='width:60rpx;' src='../../resource/arrow3.png' mode='widthFix'></image>
 
-    <input class="To" maxlength='12' bindinput='To' value='{{end}}'></input>
-    <image class="search" style='  width: 70rpx;' mode='widthFix' src='../../resource/search.png' bindtap='search'></image>
-  </view>
+    <input class="From" maxlength='12' bindinput='From' value='{{start}}' confirm-type='search'  bindconfirm="search" placeholder='活动集合点'></input>
+    <image class="search-icon" mode='widthFix' src='../../resource/search3.png' bindtap='search'></image>
+
+    <input class="To" maxlength='12' bindinput='To' bindconfirm="search" value='{{end}}' confirm-type='search' placeholder='活动目的地'></input>
+
+
   <block wx:for="{{item}}" wx:for-item="info" wx:for-index='idx' wx:key="key1">
     <template is="indexTemplate" data="{{...info,idx:idx}}" />
   </block>
+
+
+
+
 </view>

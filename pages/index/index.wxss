@@ -12,50 +12,42 @@ page{
 .From{
   position: fixed;
   top :27rpx;
-  left :40rpx;
+  left :2%;
   min-height: 1rem;
   height: 70rpx;
-  width: 250rpx ;
+  width: 45% ;
   text-align: center;
-
-
-  z-index: 1
+  background-color: #fffbf8;
+  border-radius: 25rpx 40rpx 40rpx  25rpx  ;
+  z-index: 10
 }
 .To{
+  z-index: 10;
   position: fixed;
   top :27rpx;
-  left:370rpx;
+  right:2%;
   min-height: 1rem;
   height: 70rpx;
-  width: 250rpx;
+  width: 45%;
   text-align: center;
-  z-index: 1;
-    display: flex;
-  align-items: center;
-
-
-
-}
-.arrow{
-  position:fixed;
   display: flex;
   align-items: center;
-  left:300rpx;
-  top: 30rpx;
-
-  z-index: 1;
-
-
+  background-color: #fffbf8;
+  border-radius: 40rpx 25rpx 25rpx 40rpx
 
 
 }
-.search{
-  position: fixed;
-  top :30rpx;
-  right:40rpx;
+.search-icon{
+  position:fixed;
 
-  z-index: 1
+  left:44%;
+  top :18rpx;
+  width: 12%;
+  height: auto;
+  z-index: 15;
+ 
 }
+
 .head{
   position:fixed;
   top: 0;
@@ -81,6 +73,6 @@ page{
   
   height: 80rpx;
   border: 1rpx rgb(86, 146, 180) solid;
-  border-radius: 30rpx;
+  border-radius: 37rpx;
 }
 @import "index-template/index-template.wxss";

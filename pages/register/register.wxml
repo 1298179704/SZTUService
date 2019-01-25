@@ -1,4 +1,6 @@
 <view class='background '>
+   <official-account class="officialAccount" ></official-account>
+
 <view class='main'>
 
 <view >
