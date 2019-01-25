@@ -182,14 +182,13 @@ page {
   margin: 0 20rpx
 }
 .horizon3{
-  width: 80%;
+  width: 70%;
   height: 55rpx;
   text-align: start;
   font-weight: lighter;
-  margin: 30rpx 40rpx 20rpx 30rpx;
+  margin: 30rpx 40rpx 20rpx 20rpx;
   background: rgb(243, 243, 243);
- border-radius: 30rpx;
- padding: 0 20rpx
+  border-radius: 20rpx;
 }
 
 .MyName {

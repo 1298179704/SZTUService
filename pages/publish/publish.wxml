@@ -56,7 +56,7 @@
 
       <view class="row">
         <image class="NoteIcon" mode='widthFix' bindtap='notedetail' src='../../resource/Note.png'></image>
-        <input class="horizon3" type='text' placeholder='备注信息' bindinput='NoteChange' maxlength='25'></input>
+        <input class="horizon3" type='text' placeholder-style='margin:0 20rpx;font-size:large' placeholder='备注信息' bindinput='NoteChange' maxlength='25'></input>
       </view>
 
     </view>
