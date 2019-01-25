@@ -178,7 +178,7 @@ Page({
             } else {
               wx.showModal({
                 title: '哦嚯o_o',
-                content: '错误信息：' + res.data.errmsg + ' | 错误代码：' + res.data.errcode + ' | 请尝试刷新或与开发者联系',
+                content: '错误信息：' + res.data.errmsg + ' | 错误代码：' + res.data.errcode + ' | 请尝试刷新或与客服联系',
                 showCancel: false
               })
             }

@@ -6,16 +6,7 @@ Page({
     left: 1,
     right: 0
   },
-  copymail(){
-    wx.setClipboardData({
-      data: this.data.mail,
-      success: function () {
-        wx.showToast({
-          title: '已复制到粘贴板',
-        })
-      }
-    })
-  },
+
   toindex(){
     wx.switchTab({
       url: '../index/index'

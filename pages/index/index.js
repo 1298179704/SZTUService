@@ -215,6 +215,12 @@ Page({
               }
             }
           })
+        } else if (res.data.errcode == "109") {
+          wx.showModal({
+            title: '错误',
+            content: '非法用户警告，请完全关闭小程序并重启',
+            showCancel: false
+          })
         } else {
           wx.showModal({
             title: '哦嚯o_o',
