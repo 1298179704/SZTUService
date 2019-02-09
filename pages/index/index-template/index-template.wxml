@@ -12,18 +12,18 @@
 
 
     <view class='main'>
-    <view class='detail-title'>详情</view>
+
     
   
     
       <view class='start-end'>
    
-      <view class='start-end-title'>   <image style='  width: 50rpx; height:auto ' mode='widthFix' src='../../resource/index-start.png'></image>活动集合：</view>
+      <view class='start-end-title'>   <image style='  width: 30rpx;margin:0 10rpx; height:auto ' mode='widthFix' src='../../resource/index-start.png'></image>活动集合：</view>
        <view class='start-end-text'>{{start_name}}</view>
        </view>
       <view class='start-end'>
      
-      <view class='start-end-title'> <image style='  width: 50rpx; height:auto ' mode='widthFix' src='../../resource/index-end.png'></image>活动地点：</view> 
+      <view class='start-end-title'> <image style='  width: 30rpx; height:auto ;margin:0 10rpx' mode='widthFix' src='../../resource/index-end.png'></image>活动地点：</view> 
       <view class='start-end-text'>{{end_name}}</view>
       </view>
 

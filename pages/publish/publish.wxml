@@ -12,7 +12,7 @@
         </picker>
       </view>
 
-            <image class="sort-icon" mode='widthFix' src='../../resource/type.png'></image>
+            <image mode='widthFix' style='  width: 10%;height: auto;display: flex;position: absolute;left: 45.6%;top: 82rpx;' src='../../resource/type.png'></image>
 
    
           
@@ -27,13 +27,13 @@
 
       <view class="StartEnd">
         <view class="row">
-          <image class="Start" mode='widthFix' src='../../resource/Start.png'></image>
+          <image  mode='widthFix' style='  width: 70rpx;height: auto; margin: 20rpx 40rpx 20rpx 20rpx;' src='../../resource/Start.png'></image>
           <view class="horizon" bindtap='chooseStartLocation'>
             <view class='text'> {{StartName}}</view>
           </view>
         </view>
         <view class="row">
-          <image class="Destination" mode='widthFix' src='../../resource/End.png'></image>
+          <image style='  width: 70rpx;height: auto; margin: 20rpx 40rpx 20rpx 20rpx;' mode='widthFix' src='../../resource/End.png'></image>
           <view class="horizon" bindtap='chooseEndLocation'>
             <view class='text'> {{EndName}}</view>
           </view>
@@ -42,27 +42,27 @@
 
       <picker mode="date" value="{{date}}" start="{{startdate}}" end="{{enddate}}" bindchange='DateChange'>
         <view class="row">
-          <image class="Date" mode='widthFix' src='../../resource/Date.png' bindtap=' DateChange'></image>
+          <image style='  width: 70rpx;height:auto;margin: 20rpx 40rpx 20rpx 20rpx;' mode='widthFix' src='../../resource/Date.png' bindtap=' DateChange'></image>
           <view class="horizon2"><view class='text'>  {{date}}</view></view>
         </view>
       </picker>
 
       <picker mode="time" value='{{time}}' start="00：00" end="24:00" bindchange='TimeChange'>
         <view class="row">
-          <image class="Time" mode='widthFix' src='../../resource/Time.png' bindtap=' TimeChange'></image>
+          <image style='  width: 70rpx;height:auto; margin: 20rpx 40rpx 20rpx 20rpx;' mode='widthFix' src='../../resource/Time.png' bindtap=' TimeChange'></image>
           <view class="horizon2"> <view class='text'> {{time}}</view></view>
         </view>
       </picker>
 
       <view class="row">
-        <image class="NoteIcon" mode='widthFix' bindtap='notedetail' src='../../resource/Note.png'></image>
+        <image style='  width: 70rpx;height:auto; margin: 20rpx 40rpx 20rpx 20rpx;' mode='widthFix' bindtap='notedetail' src='../../resource/Note.png'></image>
         <input class="horizon3" type='text' placeholder-style='margin:0 20rpx;font-size:large' placeholder='备注信息' bindinput='NoteChange' maxlength='25'></input>
       </view>
 
     </view>
 
     <button class='SubmitButton' size='default' bindtap='InformationSubmit'>
-      <image class='PublishIcon' src='../../resource/publish-icon.png' mode='widthFix'></image>
+      <image style='  width: 70rpx; height:auto' src='../../resource/publish-icon.png' mode='widthFix'></image>
       <view>发布</view>
     </button>
 

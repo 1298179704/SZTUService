@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 100rpx;
-  margin: 60rpx 18rpx;
+  top: 180rpx;
+  margin:0 18rpx 100rpx 18rpx;
   background-color: #fff;
   border-radius: 20rpx;
   color: rgb(177, 160, 140);
@@ -50,23 +50,9 @@
   font-weight: lighter;
 }
 
-.detail-title{
-  color: #ffffff;
-   background:#e7e6e6;
-  border-radius: 8rpx;
-  width: 80rpx;
-  height: auto;
-  font-size: x-small;
-  font-weight: lighter;
-  position: absolute;
-  right: 3rpx;
-  text-align: center;
 
-
-
-}
 .main {
-  margin: 20rpx 30rpx 0rpx 30rpx;
+  margin: 20rpx 30rpx 10rpx 30rpx;
  
   position: relative;
 
@@ -94,6 +80,7 @@ position: relative;
 display: flex;
 flex-direction: row;
 align-items: center;
+
 }
 
 .start-end-text {
@@ -107,7 +94,7 @@ margin: 10rpx 0;
 }
 
 .Txtcolor {
-  color: rgb(212, 139, 29);
+  color: #d48b1d;
   font-weight: normal;
 
 }
@@ -164,7 +151,7 @@ margin: 10rpx 0;
 }
 .member-title{
   color: #ffffff;
-   background:#dbdbdb;
+  background:#d8b683;
   border-radius: 8rpx;
   width: max-content;
  

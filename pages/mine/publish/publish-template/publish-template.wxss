@@ -126,6 +126,11 @@ width: 120rpx
   background:#2E6E92 ;
   color: #FFFFFF
 }
+.btn2{
+  border-radius: 30rpx;
+  background:#eb7b1f ;
+  color: #FFFFFF
+}
 
 .Edit-accomplish{
   position: relative;

@@ -1,0 +1,87 @@
+<!--pages/share/share.wxml-->
+
+<view class="Content">
+  <view class='majority'>
+    <view class='type'>
+
+      <!-- 类型，时间，日期 等所有数据的命名规则和首页的一致 -->
+      <view class='type-content1'>类型：
+        <span class="Txtcolor">{{acttype}}</span>
+      </view>
+      <view class='type-content2'>时间：
+        <span style="color:#d48b1d; ">{{date}} </span>
+        <span class="Txtcolor">{{time}}</span>
+      </view>
+    </view>
+  </view>
+
+  <view style='font-size:small;color:#636060;margin:0 50rpx;position:relative;display:flex;align-items:center;justify-content:center; background: #f8f8f8;border-radius: 10rpx;'>
+    <span class="Txtcolor"> {{tripmode}} </span>出行； 共
+    <span class="Txtcolor"> {{people1}}</span>人活动； 还差
+    <span class="Txtcolor">未定义</span> 人</view>
+
+
+  <view class='main'>
+
+    <view class='start-end'>
+      <view class='start-end-title'>
+        <image style='  width: 50rpx; height:auto ' mode='widthFix' src='../../resource/index-start.png'></image>
+      </view>
+      <view class='start-end-text'>{{start_name}}</view>
+    </view>
+    <image class='arrow' src='../../resource/arrow-down.png' mode='widthFix' style='width:14%;height:auto'></image>
+    <view class='start-end'>
+
+      <view class='start-end-title'>
+        <image style='  width: 50rpx; height:auto ' mode='widthFix' src='../../resource/index-end.png'></image>
+      </view>
+      <view class='start-end-text'>{{end_name}}</view>
+    </view>
+
+
+  </view>
+
+
+
+</view>
+<view class='Content'>
+  <view class='main'>
+    <view class='detail-title'>详情</view>
+    <view class="row">
+      <image style='  width: 50rpx; height:auto ' mode='widthFix' src='../../resource/index-name.png'></image>活动发起：{{creater_name}}
+      <image style='width: 50rpx; height:auto  ' mode='widthFix' src='../../resource/{{creater_sex}}.png'></image>
+      <!-- 不要忘了性别的图片哦！ -->
+      
+      <view class='member-title'>{{person_type}} </view>
+    </view>
+
+    <view class="row">
+      <image style='  width: 50rpx; height:auto ' mode='widthFix' src='../../resource/index-number.png'></image>活动需求：
+      <span class="Txtcolor">{{surplus}}</span>人
+      <view class='gender'> 招募对象：
+        <span class="Txtcolor">{{sex}}</span>
+      </view>
+    </view>
+
+    <view class="note">
+      <view class='note-title'>
+        <image style='  width: 50rpx; height:auto ' mode='widthFix' src='../../resource/index-note.png'></image>
+
+        <!-- 备注 -->
+        <view>备注信息:</view>
+      </view>
+
+      <view class='note-text'> {{note}}</view>
+    </view>
+  </view>
+</view>
+
+<!-- 按钮 -->
+<button class='bnt-join'>
+  <image style='  width: 60rpx; height:auto ' mode='widthFix' src='../../resource/join-icon.png'></image>
+  <view>立即加入</view>
+</button>
+<button class='bnt-share' open-type='share' title="快上车，没时间解释了了">
+  <image style='  width: 70rpx; height:auto ' mode='widthFix' src='../../resource/share.png'></image>
+  <view>立即分享</view>
+</button>

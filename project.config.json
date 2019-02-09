@@ -37,14 +37,14 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 0,
 			"list": [
 				{
 					"id": 0,
 					"name": "1",
-					"pathName": "pages/mine/mine",
+					"pathName": "pages/share/share",
 					"query": "",
-					"scene": "1011"
+					"scene": 1011
 				}
 			]
 		}

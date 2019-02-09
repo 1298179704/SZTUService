@@ -224,6 +224,20 @@ border-radius: 30rpx;
 
 
 }
+.btn1{
+position: relative;
+float: right;
+text-align: center;
+left: 0rpx;
+bottom: 20rpx;
+background-color: #eb7b1f;
+color: #ffffff;
+margin: 30rpx;
+border: 0;
+border-radius: 30rpx;
+
+
+}
 .exit-icon{
   width: 40rpx;
   height: auto;

@@ -9,18 +9,6 @@
 
 }
 
-.sort-icon{
-  width: 10%;
-  height: auto;
- display: flex;
- position: absolute;
- left: 45.6%;
- top: 82rpx;
-
-
-
-
-}
 
 .publish {
   display: flex;
@@ -67,17 +55,9 @@ justify-content: center;
   margin: 20rpx 40rpx 20rpx 20rpx;
 }
 
-.Start {
-  width: 70rpx;
-  height: auto;
-  margin: 20rpx 40rpx 20rpx 20rpx;
-}
 
-.Destination {
-  width: 70rpx;
-  height: auto;
-  margin: 20rpx 40rpx 20rpx 20rpx;
-}
+
+
 
 
 
@@ -86,20 +66,7 @@ justify-content: center;
   flex-direction: column;
 }
 
-.Date {
-  width: 70rpx;
-  margin: 20rpx 40rpx 20rpx 20rpx;
-}
 
-.Time {
-  width: 70rpx;
-  margin: 20rpx 40rpx 20rpx 20rpx;
-}
-
-.NoteIcon {
-  width: 70rpx;
-  margin: 20rpx 40rpx 20rpx 20rpx;
-}
 
 .Phone {
   display: flex;
@@ -319,8 +286,4 @@ page {
 .gender-limitation{
   font-size: 38rpx;
 
-}
-
-.PublishIcon {
-  width: 70rpx;
 }
