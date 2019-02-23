@@ -2,10 +2,7 @@
   <view class="Content">
   <view class='majority'>
   <view class='type'>活动类型：{{acttype}}</view>
-  <button class="join-button" bindtap='join' data-idx='{{idx}}' data-danhao='{{danhao}}' >
-        <image disabled='{{btn_state}}' style='  width: 35rpx;'  mode='widthFix' src='../../resource/join-icon.png'></image>
-        <view>报名</view>  
-      </button>
+
   </view>
 
 
@@ -27,11 +24,6 @@
       </view>
 
       
-      <view class="row">
-        <image style='  width: 50rpx; height:auto ' mode='widthFix' src='../../resource/index-name.png'></image>活动发起：{{creater_name}}
-        <image style='width: 50rpx; height:auto  ' mode='widthFix' src='../../resource/{{creater_sex}}.png'></image>
-      <view class='member-title'>{{person_type}} </view>
-      </view>
       <view class='row'>
         <image style='  width: 50rpx; height:auto ' mode='widthFix' src='../../resource/index-time.png'></image>活动时间：
         <span class="Txtcolor">{{date}} {{time}}</span>
@@ -50,22 +42,12 @@
         <span class="Txtcolor"> {{people1}}</span> 人活动</view>
 
 
-      <view class="note">
-
-        <view class='note-title'>
-          <image style='  width: 50rpx; height:auto ' mode='widthFix' src='../../resource/index-note.png'></image>
-          <view>备注信息:</view>
-        </view>
-
-        <view class='note-text'> {{note}}</view>
-        
 
 
 
 
 
-
-      </view>
+  
       
 
 

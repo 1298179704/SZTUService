@@ -1,66 +1,52 @@
-<view class='background '>
-
-
 <view class='main'>
-
-<view >
-  <view class='title'>
-  <image style='  width: 40rpx; height:auto' mode='widthFix' src='../../resource/register1.png'></image>
-  <view>注册</view>  
-  </view>
-  <view class="column">
-    <label><span class="important_color">*</span>学号</label>
-    <input class='input-style' bindinput='SaveID' catchblur='checkid'   placeholder="输入学号或工号" type='number'></input>
-    <view class="check_icon" style='display:{{checkicon[1].icondisplay}}'>
-      <icon type="{{checkicon[1].icontype}}" size='20' color='{{checkicon[1].iconcolor}}'></icon>
+<!-- 标题 -->
+  <view>
+    <view class='title'>
+      <image style='  width: 40rpx; height:auto' mode='widthFix' src='../../resource/register1.png'></image>
+      <view>注册</view>
     </view>
-  </view>
 
-  <view class="column">
-    <label><span class="important_color">*</span>姓名</label>
-    <input class='input-style' bindinput='SaveName' catchblur="checkName"   placeholder="姓名和学号必须匹配"></input>
-    <view class="check_icon" style='display:{{checkicon[1].icondisplay}}'>
-      <icon type="{{checkicon[2].icontype}}" size='20' color='{{checkicon[2].iconcolor}}'></icon>
+<!-- 手机号 -->
+    <view class="column">
+      <image class='img-title' style='  width: 70rpx; height:auto' mode='widthFix' src='../../resource/mobile-phone.png'></image>
+      <input class='input-style' bindinput='SavePNumber' catchblur='checkPnumber' placeholder='手机号' type='number'></input>
+      <view class="check_icon" style='display:{{checkicon[0].icondisplay}}'>
+        <icon type="{{checkicon[0].icontype}}" size='20' color='{{checkicon[0].iconcolor}}'></icon>
+      </view>
     </view>
-  </view>
-
-  <view class="column">
-    <label><span class="important_color">*</span>手机</label>
-    <input class='input-style' bindinput='SavePNumber' catchblur='checkPnumber'   placeholder='手机号' type='number'></input>
-    <view class="check_icon" style='display:{{checkicon[0].icondisplay}}'>
-      <icon type="{{checkicon[0].icontype}}" size='20' color='{{checkicon[0].iconcolor}}'></icon>
+  <!-- 验证码 -->
+    <view class="column">
+      <image class='img-title' style='  position: relative; width: 70rpx; height:auto' mode='widthFix' src='../../resource/vcode.png'></image>
+      <input class='input-style' bindinput="SaveCode" placeholder='验证码' type='number'></input>
+      <button class='getnumber' disabled='{{disabled}}' data-id="2" bindtap="getcodebtn" hover-class='hover'>{{time}}</button>
     </view>
-  </view>
-  <view class="row1">
-  <image style='  position: relative;left: 40rpx; width: 67rpx; height:auto' mode='widthFix' src='../../resource/vcode.png'></image>
-    <input class='inputVcode' bindinput="SaveCode"  placeholder='输入验证码' type='number'></input>
-    <button class='getnumber' disabled='{{disabled}}' data-id="2" bindtap="getcodebtn" hover-class='hover'>{{time}}</button>
-  </view>
-  <view class="WeChat">
+  <!-- 微信号 -->
+    <view class="column">
 
-      <image  style='  position: relative;left: 40rpx; width: 69rpx;  height:auto' mode='widthFix' src='../../resource/WeChat.png'></image>
+      <image class='img-title' style='  position: relative; width: 70rpx;  height:auto' mode='widthFix' src='../../resource/WeChat.png'></image>
 
-    <input class='input-style' type='text' style='width:400rpx' bindinput='wechat' placeholder='微信号(方便联系)' cursor-spacing="50"></input>
-  </view>
-</view>
-
-<view class='row2'>
-  <view class="agree">
-    <radio color='#2E6E92' bindtap='agree' checked='{{AgreeCheck}}' />
-    <view class='agreement' bindtap='agreedetail'>
-      <span class="agree_color">同意免责声明</span>
+      <input class='input-style' type='text' bindinput='wechat' placeholder='微信号' cursor-spacing="50"></input>
     </view>
+    <!-- 免责声明 -->
+  <view class='column2'>
+    <view class="agree">
+      <radio color='#2E6E92' bindtap='agree' checked='{{AgreeCheck}}' />
+      <view class='agreement' bindtap='agreedetail'>
+        <span class="agree_color">同意免责声明</span>    <!-- 提交按钮 -->
+
+      </view>
+    </view>
+        <button class='submit-btn' bindtap='Submit' hover-class='hover'>提交</button>
   </view>
-  <button class='submit-btn' bindtap='Submit'hover-class='hover'>提交</button>
- </view>
+
+
+  </view>
 
 </view>
-
-  <button class='service'  style=' font-size:x-small;'  open-type="contact"  hover-class='hover'>
-       <image mode='widthFix' style='width:40rpx;  height:auto'  src='../../resource/service.png' ></image>
+<!-- 客服按钮 -->
+<button class='service' style=' font-size:x-small;' open-type="contact" hover-class='hover'>
+  <image mode='widthFix' style='width:40rpx;  height:auto' src='../../resource/service.png'></image>
   <view>寻求帮助</view>
 
-  </button>
-   <view class='text2'>注册过程出现问题?请截图错误代码并点击下方的客服按钮反馈。</view>
-
-</view>
+</button>
+<view class='text2'>注册过程出现问题?请截图错误代码并点击下方的客服按钮反馈。</view>

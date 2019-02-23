@@ -3,6 +3,7 @@
     "pages/find/find",
     "pages/publish/publish",
     "pages/register/register",
+    "pages/pre-register/pre-register",
     "pages/index/index",
     "pages/mine/mine",
     "pages/agree/agree",
@@ -11,8 +12,8 @@
     "pages/mine/information/information",
     "pages/mine/help/help",
     "pages/helpst/helpst",
-    "pages/share/share",
-    "pages/pre-register/pre-register"
+    "pages/share/share"
+    
   
 
   ],

@@ -85,9 +85,25 @@ Page({
           })
         }
       },
-      fail() {
-        wx.hideLoading()
+      fail(){
+        wx.hideLoading();
+        wx.getSetting({
+          success: function(res){
+          
+            console.log(res.authSetting.scope.userLocation)
+           
+
+            }
+
+
+
+
+
+        })
+          
+        
       },
+      
 
     })
   },

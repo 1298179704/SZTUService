@@ -1,18 +1,16 @@
 
 page{
-width: 100%;
-height: 100%;
-background:#0A6E92;
-  
+  width: 100%;
+  height: 100%;
+  background-color: #0A6E92
 }
 
 .main{
   position: relative;
-  top: 300rpx;
-  margin:0 20rpx;
+  top: 100rpx;
+  margin:0 70rpx;
   border-radius: 25rpx;
   background: #ffffff;
-
   display: flex;
 
 
@@ -23,31 +21,32 @@ background:#0A6E92;
 }
 .title{
   position: relative;
+  left: 5%;
   top: 10rpx;
-  color: #5c5959;
+  color: #777373;
+  font-size: small;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: small
+  border-bottom: solid 4rpx #f5f5f5;
+ margin: 0 50rpx;
 
   
 }
 
 .column{
   position: relative;
-  margin: 50rpx 20rpx 47rpx 40rpx;
+  margin: 30rpx 20rpx 20rpx 30rpx;
   top: 10px;
   color: #5c5959;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.important_color{
-  color: red;
+
+.img-title{
+  margin: 0 20rpx
 }
-
-
-
 .input-style{
   display: flex;
   align-items: center;
@@ -60,18 +59,17 @@ background:#0A6E92;
  background: rgb(243, 243, 243);
  border-radius: 30rpx;
 
-  margin: 0 0 0 80rpx ;
+  margin: 0 0 0 20rpx ;
 
 }
 
 .submit-btn{
   position: relative;
   display: flex;
-  left: 615rpx;
-  top: 87rpx;
+  right: 105rpx;
+  top: 0rpx;
+  float: right
 
-
-  
 }
 .hover{
  opacity:0.3
@@ -83,33 +81,37 @@ background:#0A6E92;
   font-size: xx-small;
   font-weight: lighter;
   color: #cfcfcf;
+  width: 60%;
+  left: 20%;
 
 
 }
 .text2{
   position: absolute;
-  bottom: 50rpx;
+  left: 5%;
+  bottom: 100rpx;
   font-size:x-small;
   font-weight: lighter;
-  margin: 30rpx 30rpx;
-  color: #f5f5f5
-
-
+  color: #ececec;
+  width: 90%;
+  text-align: center;
 }
 .service{
   font-size: small;
   position: absolute;
   z-index: 100;
-  bottom: 5rpx;
-  left: 35%;
-  width: 30%;
-  font-weight: lighter;
-  background-color: #0A6E92;
-  color: #ffffff;
+  bottom: 10rpx;
+  left: 20%;
+  width: 60%;
+  border-radius: 20rpx;
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #318aaa;
   display: flex;
   flex-direction: row;
   align-items: center;
-justify-content: center
+ justify-content: center;
+
 
   
 }
