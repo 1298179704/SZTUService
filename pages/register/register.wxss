@@ -5,21 +5,18 @@ page{
 .background{
   width: 100%;
   height: 100%;
-  background:rgb(247, 247, 247);
+  background:#0A6E92;
 
 
 }
-.officialAccount{
-  position: absolute;
-  width: 100%;
-}
+
 .main{
   position: relative;
-  top: 210rpx;
+  top: 120rpx;
   margin:0 20rpx;
-  border-radius: 30rpx;
+  border-radius: 25rpx;
   background: #ffffff;
-  box-shadow: 0rpx 0rpx 10rpx 3rpx #e2e2e2;
+
 
 }
 
@@ -30,7 +27,7 @@ page{
   position: relative;
   top: 10rpx;
   color: #5c5959;
-  font-size: large;
+  font-size: small;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,6 +44,9 @@ page{
   flex-direction: row;
   align-items: center;
 }
+label{
+  margin: 0 0 0 20rpx
+}
 .important_color{
   color: red;
 }
@@ -57,40 +57,43 @@ page{
   display: flex;
   align-items: center;
   text-align: center;
-  max-width: 65%;
-  
   height: 70rpx;
   line-height: 70rpx;
-
- background: rgb(243, 243, 243);
- border-radius: 30rpx;
-
-  margin: 0 0 0 80rpx ;
+  background: #f3f3f3;
+  border-radius: 30rpx;
+  margin: 0 10rpx 0 70rpx ;
 
 }
 .inputVcode{
   position: relative;
   
-  background: rgb(243, 243, 243);
-  border-radius: 30rpx;
+  background: #f3f3f3;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 30rpx;
+  border-bottom-right-radius: 0;
   text-align: center;
-  width: 300rpx;
   height: 70rpx;
   line-height: 70rpx;
-  margin: 0 20rpx 0 90rpx;
+  margin: 0 0rpx 0 80rpx;
+  width: 365rpx
+
   
 }
 .getnumber{
   position: relative;
-  width: 160rpx;
+  right: 40rpx;
+  width: 130rpx;
   height: 70rpx;
   line-height: 70rpx;
   text-align: center;
-  border-radius: 40rpx;
-  right: 30rpx;
+  border-top-left-radius: 0;
+  border-top-right-radius: 30rpx;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 30rpx;
   font-weight: lighter;
-
-  background-color:rgb(77, 140, 177);
+  font-size: 0.7rem;
+  background-color:#4d8cb1;
   color: #ffffff
 
 
@@ -101,8 +104,11 @@ page{
 .WeChat{
   display: flex;
   flex-direction: row;
-  margin: 60rpx 0rpx 20rpx 20rpx;
+  margin: 20rpx 60rpx 20rpx 80rpx;
   align-items: center;
+  border-bottom: solid #ececec 4rpx;
+  padding: 30rpx 0;
+  
   
 
 
@@ -114,7 +120,9 @@ page{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 165rpx 0rpx 20rpx 20rpx ;
+  margin: 170rpx 60rpx 20rpx 80rpx ;
+
+
 
 }
 .row2{
@@ -123,8 +131,9 @@ page{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 100rpx 0 0 0 ;
+  margin: 100rpx 0 0 0;
   bottom: 10rpx;
+
 }
 .agree{
   display: flex;
@@ -134,7 +143,6 @@ page{
 }
 .submit-btn{
   position: relative;
-  right: -40rpx;
   bottom: 40rpx;
   display: flex;
   align-items: center;
@@ -149,8 +157,20 @@ page{
   font-weight: lighter
 }
 .agree_color{
-  color: rgb(238, 143, 143);
-  border-bottom: 3rpx solid rgb(216, 153, 124)
+  color: #ee8f8f;
+  border-bottom: 3rpx solid #d8997c
+}
+.text2{
+  position: relative;
+  top: 190rpx;
+  font-size:x-small;
+  font-weight: lighter;
+  color: #f0f0f0;
+
+ text-align:center;
+
+
+
 }
 .service{
   font-size: small;
@@ -168,4 +188,7 @@ page{
 justify-content: center
 
   
+}
+.hover{
+  opacity: 0.3
 }

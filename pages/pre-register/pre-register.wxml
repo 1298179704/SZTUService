@@ -1,0 +1,42 @@
+<!--pre-register/pre-register.wxml-->
+
+<view class='main'>
+
+
+<view >
+  <view class='title'>
+   <image style='  width: 40rpx; height:auto' mode='widthFix' src='../../resource/Me.png'></image>
+   <view>教务系统</view>  
+  </view>
+  <!-- 学号 -->
+  <view class="column">
+    <label><span class="important_color">*</span>账号</label>
+    <input class='input-style'   placeholder="输入学号或工号" type='number'></input>
+   
+  </view>
+
+<!-- 教务系统密码 -->
+  <view class="column">
+    <label><span class="important_color">*</span>密码</label>
+    <input class='input-style' placeholder="教务系统密码" type='password'></input>
+  
+  </view>
+
+ <view class="text1"> 账号和密码仅作一次验证；验证成功后可以进入教务系统修改密码</view>
+
+
+</view>
+
+</view>
+<!-- 图片 确定按钮 -->
+ <image class='submit-btn' style='  width: 80rpx; height:auto' mode='widthFix' src='../../resource/next.png'></image>
+
+ <view class='text2'>没有教务系统账号? 无法进行教务系统验证? 请点击下方客服按钮寻求帮助!</view>
+
+
+<!-- 客服按钮 -->
+  <button class='service'  style=' font-size:x-small;'  open-type="contact" hover-class='hover' >
+       <image mode='widthFix' style='width:40rpx;  height:auto'  src='../../resource/service.png' ></image>
+  <view>寻求帮助</view>
+
+  </button>

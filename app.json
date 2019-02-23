@@ -11,7 +11,10 @@
     "pages/mine/information/information",
     "pages/mine/help/help",
     "pages/helpst/helpst",
-    "pages/share/share"
+    "pages/share/share",
+    "pages/pre-register/pre-register"
+  
+
   ],
   "window": {
     "backgroundTextStyle": "dark",

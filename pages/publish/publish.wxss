@@ -6,7 +6,6 @@
   font-weight: lighter;
   margin: 35rpx 0 0 0;
   position: relative;
-
 }
 
 
@@ -26,27 +25,25 @@
   background: #ffffff;
   box-shadow: 0rpx 0rpx 10rpx 3rpx #e2e2e2;
   border-radius: 20rpx;
-  color: rgb(245, 153, 153);
+  color: #f59999;
 
 }
 .Notice-content{
   display: flex;
-  color: #e9c18e;
+  color: #e9c290;
   margin: 10rpx;
-  font-size: small
+  font-size: small;
 }
 .Notice-Title{
   position: relative;
   display: flex;
   align-items: center;
-justify-content: center;
+  justify-content: center;
   max-width: 80rpx;
   background: #f3f3f3;
   box-shadow: 0rpx 0rpx 10rpx 3rpx #f0efef;
   border-radius: 5rpx;
   font-size: x-small
-
-  
 }
 
 .Note {
@@ -87,7 +84,7 @@ page {
 }
 
 .background {
-  background-color: rgb(245, 245, 245);
+  background-color: #f5f5f5;
   height: 100%;
   width: 100%;
 }

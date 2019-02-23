@@ -5,11 +5,9 @@
     <view class='type'>
 
       <!-- 类型，时间，日期 等所有数据的命名规则和首页的一致 -->
-      <view class='type-content1'>类型：
-        <span class="Txtcolor">{{acttype}}</span>
+      <view class='type-content1'>类型: <span class="Txtcolor">{{acttype}}</span>
       </view>
-      <view class='type-content2'>时间：
-        <span style="color:#d48b1d; ">{{date}} </span>
+      <view class='type-content2'>时间: <span style="color:#d48b1d; ">{{date}} </span>
         <span class="Txtcolor">{{time}}</span>
       </view>
     </view>

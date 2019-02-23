@@ -1,0 +1,115 @@
+
+page{
+width: 100%;
+height: 100%;
+background:#0A6E92;
+  
+}
+
+.main{
+  position: relative;
+  top: 300rpx;
+  margin:0 20rpx;
+  border-radius: 25rpx;
+  background: #ffffff;
+
+  display: flex;
+
+
+}
+
+.place-holder{
+  font-weight: lighter;
+}
+.title{
+  position: relative;
+  top: 10rpx;
+  color: #5c5959;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small
+
+  
+}
+
+.column{
+  position: relative;
+  margin: 50rpx 20rpx 47rpx 40rpx;
+  top: 10px;
+  color: #5c5959;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.important_color{
+  color: red;
+}
+
+
+
+.input-style{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 65%;
+  
+  height: 70rpx;
+  line-height: 70rpx;
+
+ background: rgb(243, 243, 243);
+ border-radius: 30rpx;
+
+  margin: 0 0 0 80rpx ;
+
+}
+
+.submit-btn{
+  position: relative;
+  display: flex;
+  left: 615rpx;
+  top: 87rpx;
+
+
+  
+}
+.hover{
+ opacity:0.3
+}
+.text1{
+  position: relative;
+  text-align: center;
+  margin: 30rpx 20rpx;
+  font-size: xx-small;
+  font-weight: lighter;
+  color: #cfcfcf;
+
+
+}
+.text2{
+  position: absolute;
+  bottom: 50rpx;
+  font-size:x-small;
+  font-weight: lighter;
+  margin: 30rpx 30rpx;
+  color: #f5f5f5
+
+
+}
+.service{
+  font-size: small;
+  position: absolute;
+  z-index: 100;
+  bottom: 5rpx;
+  left: 35%;
+  width: 30%;
+  font-weight: lighter;
+  background-color: #0A6E92;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+justify-content: center
+
+  
+}

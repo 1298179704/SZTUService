@@ -4,9 +4,8 @@
   <view class='type'>活动类型：{{acttype}}</view>
   <button class="join-button" bindtap='join' data-idx='{{idx}}' data-danhao='{{danhao}}' >
         <image disabled='{{btn_state}}' style='  width: 35rpx;'  mode='widthFix' src='../../resource/join-icon.png'></image>
-        <view>报名</view>
+        <view>报名</view>  
       </button>
-
   </view>
 
 

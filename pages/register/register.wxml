@@ -1,11 +1,12 @@
 <view class='background '>
-   <official-account class="officialAccount" ></official-account>
+
 
 <view class='main'>
 
 <view >
-  <view class='title'><view>注册</view>  
-  <image style='  width: 50rpx; height:auto' mode='widthFix' src='../../resource/register1.png'></image>
+  <view class='title'>
+  <image style='  width: 40rpx; height:auto' mode='widthFix' src='../../resource/register1.png'></image>
+  <view>注册</view>  
   </view>
   <view class="column">
     <label><span class="important_color">*</span>学号</label>
@@ -31,15 +32,15 @@
     </view>
   </view>
   <view class="row1">
-  <image style='  position: relative;left: 40rpx; width: 60rpx; height:auto' mode='widthFix' src='../../resource/vcode.png'></image>
+  <image style='  position: relative;left: 40rpx; width: 67rpx; height:auto' mode='widthFix' src='../../resource/vcode.png'></image>
     <input class='inputVcode' bindinput="SaveCode"  placeholder='输入验证码' type='number'></input>
-    <button class='getnumber' disabled='{{disabled}}' data-id="2" bindtap="getcodebtn">{{time}}</button>
+    <button class='getnumber' disabled='{{disabled}}' data-id="2" bindtap="getcodebtn" hover-class='hover'>{{time}}</button>
   </view>
   <view class="WeChat">
 
-      <image  style='  position: relative;left: 40rpx; width: 70rpx;  height:auto' mode='widthFix' src='../../resource/WeChat.png'></image>
+      <image  style='  position: relative;left: 40rpx; width: 69rpx;  height:auto' mode='widthFix' src='../../resource/WeChat.png'></image>
 
-    <input class='input-style' type='text' bindinput='wechat' placeholder='微信号(方便联系)' cursor-spacing="50"></input>
+    <input class='input-style' type='text' style='width:400rpx' bindinput='wechat' placeholder='微信号(方便联系)' cursor-spacing="50"></input>
   </view>
 </view>
 
@@ -50,13 +51,16 @@
       <span class="agree_color">同意免责声明</span>
     </view>
   </view>
-  <button class='submit-btn' bindtap='Submit'>提交</button>
+  <button class='submit-btn' bindtap='Submit'hover-class='hover'>提交</button>
+ </view>
+
 </view>
-</view>
-  <button class='service'  style=' font-size:x-small;'  open-type="contact" >
+
+  <button class='service'  style=' font-size:x-small;'  open-type="contact"  hover-class='hover'>
        <image mode='widthFix' style='width:40rpx;  height:auto'  src='../../resource/service.png' ></image>
   <view>寻求帮助</view>
 
   </button>
+   <view class='text2'>注册过程出现问题?请截图错误代码并点击下方的客服按钮反馈。</view>
 
 </view>
