@@ -47,7 +47,7 @@
     <view class='detail-title'>详情</view>
     <view class="row">
       <image style='  width: 50rpx; height:auto ' mode='widthFix' src='../../resource/index-name.png'></image>活动发起：{{creater_name}}
-      <image style='width: 50rpx; height:auto  ' mode='widthFix' src='../../resource/{{creater_sex}}.png'></image>
+      <image style='width: 50rpx; height:auto  ' mode='widthFix' src='../../resource/1.png'></image>
       <!-- 不要忘了性别的图片哦！ -->
       
       <view class='member-title'>{{person_type}} </view>

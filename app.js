@@ -14,6 +14,7 @@ App({
     sztuAPI_setstate: "https://www.sztu.top/setstate.php",
     sztuAPI_search: 'https://www.sztu.top/search.php',
     sztuAPI_getuserinfo: 'https://www.sztu.top/getuser.php',
+    sztuAPI_register: 'https://www.sztu.top/register.php',
     login_id: '',
     code: '',
   },
@@ -45,12 +46,17 @@ App({
           })
         } else if (res.data.check_reg == "0") {
           wx.redirectTo({
+            url: '../pre-register/pre-register'
+          })
+        } else if (res.data.check_reg == '2'){
+          wx.redirectTo({
             url: '../register/register'
           })
-        }else if(res.data.errcode == '115'){
+        }
+        else if(res.data.errcode == '115'){
           wx.showModal({
             title: '诶哟',
-            content: '验证码错了额(⊙﹏⊙)',
+            content: '错误码：115(⊙﹏⊙)',
             showCancel:false
           })
         } 

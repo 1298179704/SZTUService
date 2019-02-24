@@ -225,25 +225,9 @@ Page({
 
 //  分享页面跳转
   ToShare() {
-    wx.showModal({
-      title: '分享',
-      content: '即将跳转到分享页面',
-      success(res){
-        if(res.confirm){
-          wx.navigateTo({
-            url: '../../share/share',
-
-          })
-       
-        }
-   
-
-      }
+    wx.navigateTo({
+      url: '../../share/share',
     })
-
-
   }
-
-
 
 })

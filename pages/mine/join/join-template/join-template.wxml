@@ -88,7 +88,7 @@
         <view>{{order1}}</view>
 
       </button>
-       <button  class="btn1" size='mini'  bindtap='ToShare'>分享</button>
+       <button  class="btn1" size='mini'  bindtap='ToShare' disabled='{{disable_exit}}' data-danhao='{{danhao}}'>分享</button>
   
    </view>
   </view>

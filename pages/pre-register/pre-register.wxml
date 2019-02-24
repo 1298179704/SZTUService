@@ -3,38 +3,41 @@
 <view class='main'>
 
 
-<view >
-  <view class='title'>
-   <image style='  width: 40rpx; height:auto' mode='widthFix' src='../../resource/teacher.png'></image>
-   <view>教务系统</view>  
-  </view>
-  <!-- 学号 -->
-  <view class="column">
-   <image class='img-title' style='  width: 50rpx; height:auto' mode='widthFix' src='../../resource/account.png'></image>
-    <input class='input-style'   placeholder="输入学号或工号" type='number'></input>
-   
-  </view>
+  <view>
+    <view class='title'>
+      <image style='  width: 40rpx; height:auto' mode='widthFix' src='../../resource/teacher.png'></image>
+      <view>教务系统</view>
+    </view>
+    <!-- 学号 -->
+    <view class="column">
+      <image class='img-title' style='  width: 50rpx; height:auto' mode='widthFix' src='../../resource/account.png'></image>
+      <input class='input-style' placeholder="输入学号或工号" type='number' bindinput='jwxtID' catchblur='checkID'></input>
+            <view class="check_icon" style='display:{{checkicon[0].icondisplay}}'>
+        <icon type="{{checkicon[0].icontype}}" size='20' color='{{checkicon[0].iconcolor}}'></icon>
+      </view>
 
-<!-- 教务系统密码 -->
-  <view class="column">
-     <image class='img-title' style='  width: 50rpx; height:auto' mode='widthFix' src='../../resource/password.png'></image>
-    <input class='input-style' placeholder="教务系统密码" type='password'></input>
-  
-  </view>
+    </view>
 
- <view class="text1">账号和密码仅作一次验证</view>
-</view>
+    <!-- 教务系统密码 -->
+    <view class="column">
+      <image class='img-title' style='  width: 50rpx; height:auto' mode='widthFix' src='../../resource/password.png'></image>
+      <input class='input-style' placeholder="教务系统密码" type='password' bindinput='jwxtPassword'></input>
+
+    </view>
+
+    <view class="text1">账号和密码仅作一次验证</view>
+  </view>
 
 </view>
 <!-- 图片 确定按钮 -->
- <image class='submit-btn' style='  width: 80rpx; height:auto' mode='widthFix' src='../../resource/next.png'></image>
+<image class='submit-btn' style='  width: 80rpx; height:auto' mode='widthFix' src='../../resource/next.png' bindtap='submit'></image>
 
 
 
- <view class='text2'>无法进行教务系统验证? 请点击下方客服按钮寻求帮助!</view>
+<view class='text2'>无法进行教务系统验证? 请点击下方客服按钮寻求帮助!</view>
 <!-- 客服按钮 -->
-  <button class='service'  style=' font-size:x-small;'  open-type="contact" hover-class='hover' >
-       <image mode='widthFix' style='width:40rpx;  height:auto'  src='../../resource/service.png' ></image>
+<button class='service' style=' font-size:x-small;' open-type="contact" hover-class='hover'>
+  <image mode='widthFix' style='width:40rpx;  height:auto' src='../../resource/service.png'></image>
   <view>寻求帮助</view>
 
-  </button>
+</button>

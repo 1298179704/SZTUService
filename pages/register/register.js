@@ -21,24 +21,17 @@ Page({
     ],
     time: '获取', //倒计时 
     currentTime: 61,
-    ID: "",
-    Name: "",
     PhoneNumber: "",
     code: ""
   },
 
 
-  SaveID(event) {
-    this.setData({ ID: event.detail.value })
-  },
   wechat(event){
     this.setData({
       wechat: event.detail.value
     })
   },
-  SaveName(event) {
-    this.setData({ Name: event.detail.value })
-  },
+
   SavePNumber(event) {
     this.setData({ PhoneNumber : event.detail.value });
   },
@@ -62,67 +55,22 @@ Page({
       )
     }
   },
-  checkName(e){
-    let name = e.detail.value
-    if (name != '') {
-      this.setData(
-        {
-          "checkicon[2].icontype": "success",
-          "checkicon[2].iconcolor": "green",
-          "checkicon[2].icondisplay": ""
 
-        }
-      )
-    }
-    else {
-      this.setData(
-        {
-          "checkicon[2].icontype": "warn",
-          "checkicon[2].iconcolor": "red",
-          "checkicon[2].icondisplay": ""
-        }
-      )
-    }
-
-  },
-  checkid(e){
-    let id = e.detail.value
-    if (id.length != 11 && id.length != 5) {
-      this.setData(
-        {
-          "checkicon[1].icontype": "warn",
-          "checkicon[1].iconcolor": "red",
-          "checkicon[1].icondisplay": ""//12345678912
-        }
-      )
-    }
-    else {
-      this.setData(
-        {
-          "checkicon[1].icontype": "success",
-          "checkicon[1].iconcolor": "green",
-          "checkicon[1].icondisplay": ""
-        }
-      )
-    }
-  },
   SaveCode(event) {
     this.setData({ code: event.detail.value });
   },
   Submit: function () {
     let that = this
-    if (this.data.checkicon[0].icontype == 'success' && this.data.Name != '' && this.data.checkicon[1].icontype == 'success' && this.data.code != ''){
+    if (this.data.checkicon[0].icontype == 'success'  && this.data.code.length == 5){
       if (that.data.AgreeCheck == true) {
         wx.showLoading({
           title: '验证中...',
           mask: false
         })
         wx.request({
-          url: app.globalData.sztuAPI_getcode,
+          url: app.globalData.sztuAPI_register,
           data: {
             login_id: app.globalData.login_id,
-            id: this.data.ID,
-            name: this.data.Name,
             pnum: this.data.PhoneNumber,
             code: this.data.code,
             wechat: this.data.wechat
@@ -131,9 +79,15 @@ Page({
 
             wx.hideLoading()
             if(res.data.errcode == '0'){
-              wx.redirectTo({
-                url: '../helpst/helpst'
+              wx.showToast({
+                title: '验证成功',
+                icon: 'success'
               })
+              setTimeout(function () {
+                wx.redirectTo({
+                  url: '../helpst/helpst',
+                })
+              }, 1000)
 
             }else{
               wx.showModal({
@@ -194,15 +148,13 @@ Page({
       title: '发送中...',
     })
       wx.request({
-        url: app.globalData.sztuAPI_getcode,
+        url: app.globalData.sztuAPI_register,
         data: {
           login_id: app.globalData.login_id,
-          getcode: '1',
-          pnum: this.data.PhoneNumber, 
-          name: this.data.Name,
-          id: this.data.ID
+          pnum: this.data.PhoneNumber
         },
         success(res) {
+          wx.hideLoading()
           if (res.data.errcode == '0'){
             wx.showToast({
               title: '发送成功'
@@ -217,14 +169,12 @@ Page({
           }
         },
         fail(){
+          wx.hideLoading()
           wx.showModal({
             title: '错误',
             content: '发送请求失败，请重试',
             showCancel:false
           })
-        },
-        complete(){
-          wx.hideLoading()
         }
       })
       this.getCode();
@@ -248,7 +198,7 @@ Page({
     }
   },
   getcodebtn(){
-    if ((this.data.ID.length == 5 || this.data.ID.length == 11) && this.data.Name != '' && this.data.PhoneNumber.length == 11) {
+    if (this.data.PhoneNumber.length == 11) {
       this.getVerificationCode();
     }
     else {

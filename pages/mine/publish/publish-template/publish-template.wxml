@@ -89,7 +89,7 @@
         <button disabled='{{disable_cancel}}' size='mini' type='warn' class="btn" bindtap='ChangeActState' data-danhao='{{danhao}}' data-order='2' data-id='{{id}}'>{{order1}}</button>
 
         <button disabled='{{disable_zhaomu}}' size='mini' class="btn1" bindtap='ChangeActState' data-danhao='{{danhao}}' data-order='1' data-id='{{id}}'>{{order2}}</button>
-        <button  class="btn2" size='mini' bindtap='ToShare' >分享</button>
+        <button  class="btn2" size='mini' bindtap='ToShare' disabled='{{disable_zhaomu}}' data-danhao='{{danhao}}'>分享</button>
 
       </view>
     </view>

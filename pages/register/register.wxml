@@ -17,7 +17,7 @@
   <!-- 验证码 -->
     <view class="column">
       <image class='img-title' style='  position: relative; width: 70rpx; height:auto' mode='widthFix' src='../../resource/vcode.png'></image>
-      <input class='input-style' bindinput="SaveCode" placeholder='验证码' type='number'></input>
+      <input class='input-style' bindinput="SaveCode" placeholder='验证码' maxlength='5' type='number'></input>
       <button class='getnumber' disabled='{{disabled}}' data-id="2" bindtap="getcodebtn" hover-class='hover'>{{time}}</button>
     </view>
   <!-- 微信号 -->
